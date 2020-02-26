@@ -75,9 +75,8 @@ html {
 	background: blue;	
 }*/
 
-body {
-	height: 2000px;
-	width: 3000px;
+
+html {
 	background-color: blue;
-	border: 10px solid black;
+	border: 1px solid black;
 }
