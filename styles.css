@@ -68,20 +68,36 @@ nav{
 }
 .container {
 	height: 1500px;
-	width: 1000px;
+	width: 2000px;
 	display: grid;
-	grid-template-columns: 1fr 300px 1fr 300px 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: repeat(10, 1fr);
 	grid-gap: 10px;
 }
 
 header {
-	grid-column: 3/4;
-	grid-row: 2/3;
+	color: rgb(18, 18, 18);
+	grid-column: 2/3;
+	display: grid;
+	grid-template-columns: 100px auto 100px;
+	grid-template-rows: 150px auto;
+}
+
+#title {
+	grid-column: 2/3;
+	color: rgb(18, 18, 18);
+	font-size: 40px;
+	font-style: italic;
+	font-weight: 700;
+	font-family: "NYTCheltenhamCond Light";
+	line-height: 40px;
+}
+.main_picture {
+	grid-column: 1/-1;
 }
 
 article {
-	grid-column: 3/4;
+	grid-column: 2/3;
 	grid-row: 3/4;
 }
 
@@ -94,10 +110,11 @@ article {
 	border: 1px solid rgb(50, 104, 145);
 	color: rgb(255, 255, 255)
 }
-#title{
-  color: rgb(18, 18, 18);
-}
 
-p{
+p {
 	font-family: NYTImperial;
+	font-size: 20px;
+	font-weight: 400;
+	color: rgb(51, 51, 51);
+	line-height: 30px;
 }
