@@ -63,10 +63,12 @@ html {
 }
 
 /* END OF CSS RESET */
-
+nav{
+	font-family: NYTFranklin;
+}
 .container {
-	height: 2000px;
-	width: 3000px;
+	height: 1500px;
+	width: 1000px;
 	display: grid;
 	grid-template-columns: 1fr 300px 1fr 300px 1fr;
 	grid-template-rows: repeat(10, 1fr);
@@ -81,4 +83,21 @@ header {
 article {
 	grid-column: 3/4;
 	grid-row: 3/4;
+}
+
+.button{
+	background-color: white;
+	border:0px;
+}
+.bluebutton{
+	background-color: rgb(50, 104, 145);
+	border: 1px solid rgb(50, 104, 145);
+	color: rgb(255, 255, 255)
+}
+#title{
+  color: rgb(18, 18, 18);
+}
+
+p{
+	font-family: NYTImperial;
 }
