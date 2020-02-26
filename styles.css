@@ -4,7 +4,7 @@
    License: none (public domain)
 */
 
-/*CSS RESET*/
+/* CSS RESET */
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -22,8 +22,8 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
 	font: inherit;
+	font-size: 100%;
 	vertical-align: baseline;
 }
 
@@ -61,4 +61,4 @@ html {
 	-moz-appeareance: none;
 }
 
-/*END OF CSS RESET*/
+/* END OF CSS RESET */
