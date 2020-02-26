@@ -85,23 +85,33 @@ a{
 .centerm{
 	justify-self: center;
 }
-.
 
+/* article */
 .container {
 	height: 1500px;
 	width: 2000px;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: repeat(10, 1fr);
+	grid-template-columns: 450px 100px 1fr 100px 450px;
+	grid-template-rows: repeat(5, 1fr);
 	grid-gap: 10px;
+}
+
+header {	
+}
+
+/*article {
+	grid-column: 2/5;
+	display: grid;	
 }
 
 header {
 	color: rgb(18, 18, 18);
-	grid-column: 2/3;
+	grid-column: 2/4;
+	grid-row: 1/2;
 	display: grid;
+	grid-gap: 20px;
 	grid-template-columns: 100px auto 100px;
-	grid-template-rows: 150px auto;
+	grid-template-rows: 150px auto repeat(3, 1fr);
 }
 
 #title {
@@ -112,15 +122,19 @@ header {
 	font-weight: 700;
 	font-family: "NYTCheltenhamCond Light";
 	line-height: 40px;
+	justify-self: start;
+	align-self: end;
+
 }
+
 .main_picture {
 	grid-column: 1/-1;
 }
 
-article {
-	grid-column: 2/3;
-	grid-row: 3/4;
-}
+.text_01 {
+	grid-row: 2/3;
+}*/
+/* article */
 
 .button{
 	background-color: white;
