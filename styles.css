@@ -1,4 +1,5 @@
 
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -6,7 +7,7 @@
 
 /* CSS RESET */
 
-html, body, div, span, applet, object, iframe,
+/*html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -25,10 +26,10 @@ time, mark, audio, video {
 	font: inherit;
 	font-size: 100%;
 	vertical-align: baseline;
-}
+}*/
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+/*article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -59,6 +60,24 @@ table {
 html {
 	-webkit-appearance: none;
 	-moz-appeareance: none;
-}
+}*/
 
 /* END OF CSS RESET */
+
+/*.container {
+	height: 2000px;
+	width: 3000px;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(7, 1fr);
+	grid-gap: 10px;
+	border: 10px solid black;
+	background: blue;	
+}*/
+
+body {
+	height: 2000px;
+	width: 3000px;
+	background-color: blue;
+	border: 10px solid black;
+}
