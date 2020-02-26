@@ -63,9 +63,30 @@ html {
 }
 
 /* END OF CSS RESET */
+
 nav{
+	display: grid;
 	font-family: NYTFranklin;
+	grid-gap: 5px;
+	grid-template-columns:4fr 42fr 12fr 90fr 10fr 10fr 1fr;
+	height: 42px;
 }
+
+
+a{
+	color: rgb(0,0,0);
+	font-family: NYTFranklin;
+	font-size: 12.5px;
+	font-weight: 700;
+	line-height: 12.5px;
+	text-decoration: none;
+}
+
+.centerm{
+	justify-self: center;
+}
+.
+
 .container {
 	height: 1500px;
 	width: 2000px;
@@ -105,10 +126,29 @@ article {
 	background-color: white;
 	border:0px;
 }
+
+.menu{
+	height: 18px;
+	width: 22px;
+}
+
+.search{
+	height: 25px;
+	width: 28px;
+}
+
+.spaceandcosmos{
+	color: black;
+	font-size: 14.25px;
+	line-height: 19px;
+	letter-spacing: 0.7px;
+}
+
 .bluebutton{
 	background-color: rgb(50, 104, 145);
-	border: 1px solid rgb(50, 104, 145);
-	color: rgb(255, 255, 255)
+	color: rgb(255, 255, 255);
+	display: grid;
+	justify-content: space-around;
 }
 
 p {
