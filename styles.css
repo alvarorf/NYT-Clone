@@ -67,7 +67,12 @@ html {
   font-family: myFirstFont;
   src: url(sansation_light.woff);
 }
-body{
+
+html {
+	width: 1920px;
+}
+
+body {
 	color: #333;
 	width: 1920px;
 }
@@ -101,27 +106,69 @@ nav >*{
 a:hover{
 	cursor: pointer;
 }
-/* article */
-html{
-	width: 1920px;
-}
+
+/* ARTICLE */
+
 .container {
-	height: 1080px;
-	width: 1920px;
-}
-
-article{
-margin: 0 auto;
-width: 600px;
-position: relative;
-}
-
-header {
+	height: auto;
+	width: 100%;
 	display: grid;
-	grid-template-columns: 1fr 800px 1fr;
-	grid-column: 3/5;
-	grid-template-rows: 80px 650px;
+	grid-template-columns: 1fr 1024px 1fr;
+	grid-gap: 10px;
+}
 
+article {
+	grid-column: 2/3;
+	display: grid;
+	grid-template-columns: 1fr 2.5fr 1fr;
+	grid-gap: 15px;
+}
+
+#title {
+	grid-column: 2/3;	
+	font-size: 40px;
+}
+
+#main_picture {
+	grid-column: 1/4;
+}
+
+#main_pic_footer {
+	grid-column: 1/3;
+	font-size: 15px;
+	line-height: 20px;
+}
+
+#header_text01{
+	grid-column: 2/3;
+}
+
+#header_date_text01{
+	float: left;
+}
+
+#header_icons_text01{
+	float: right;
+}
+
+.text_01 {
+	grid-column: 2/3;
+	font-family: NYTImperial;
+	font-size: 20px;
+	font-weight: 400;
+	color: rgb(51, 51, 51);
+	line-height: 30px;
+}
+
+.add_01 {
+	text-align: center;
+}
+
+.theoryofinflation {
+	grid-column: 2/3;
+}
+#theory_picture {
+	width: 100%;
 }
 
 /*article {
@@ -150,32 +197,9 @@ header {
 	justify-self: start;
 	align-self: end;
 
-}
+}*/
 
-/* article */
 
-#title{
-	display: grid;
-	grid-template-columns: 1fr 800px 1fr;
-	grid-template-rows: 50px;
-}
-
-p{
-	color: rgb(51, 51, 51);
-	font-family: "NYTImperial";
-	font-size: 1.25rem;
-	line-height: 1.875rem;
-	margin: 0 0 15px 0;
-	max-width: 100%;
-	grid-column:3/4;
-}
-
-.main_picture {
-	grid-column: 2/5;
-	height: auto;
-	width: 100%;
-	border: 1px solid rgb(51, 51, 51);
-}
 
 .menu{
 	background: url('./img/menubtn.png');
@@ -246,13 +270,7 @@ p{
 	width: 63px;
 }
 
-p {
-	font-family: NYTImperial;
-	font-size: 20px;
-	font-weight: 400;
-	color: rgb(51, 51, 51);
-	line-height: 30px;
-}
+
 
 .theoryofinflation{
 	grid-column:2-4;
