@@ -250,7 +250,7 @@ article {
 
 /* ARTICLE */	
 
-.moreinfo{
+.moreinfo {
 	display: grid;
 	grid-template-columns: repeat(4,1fr);
 	grid-template-rows: 1fr 1fr 1fr;
@@ -258,10 +258,15 @@ article {
 			"more more more mostpopular"
 			"more more more mostpopular"
 			"editor editor editor mostpopular";
-	
+	width: 1024px;
 }
 
-.more{
+.bottom {
+	width: 1024px;
+	grid-column: 2/3;
+}
+
+.more {
 	border-top: 1px solid rgb(51, 51, 51);
 	display: grid;
 	grid-auto-flow: row;
@@ -281,6 +286,7 @@ article {
 .moret{
 	grid-column:1/4;
 	height: 15px;
+	width: 700px;
 }
 
 .more img{
@@ -300,6 +306,7 @@ article {
 	font-size: 1.1875rem;
 	grid-template-columns: 1fr;
 	padding-left: 30px;
+	width: 280px;
 }
 
 .mostpopular a{
@@ -330,7 +337,31 @@ article {
 	width: 300px;
 }
 
+.related_pages{
+	border-top: 2px double gray;
+	display: grid;
+	grid-template-columns: 5fr 1fr;
+	grid-template-rows: 1fr 9fr;
+	margin: 0 auto 0 auto;
+	max-width: 1200px;
+	padding: 0 3% 9px 3%;
 
+}
+
+.relpageshead{
+	display: flex;
+	justify-content: space-between;
+}
+
+#nytlogorel{
+	display: inherit;
+	justify-content: start;
+}
+
+#gohome{
+	display: inherit;
+	justify-content: end;
+}
 
 /*article {
 	grid-column: 2/5;
