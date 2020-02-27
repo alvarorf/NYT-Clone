@@ -225,13 +225,19 @@ article {
 .more{
 	display: grid;
 	grid-auto-flow: row;
-	grid-gap: 5px;
+	grid-gap: 18px;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
 	grid-area:
 			"more1 more2 more3"
 			"more4 more5 more6";
 	justify-content: space-around;
+	margin: 45px auto 0 auto;
+}
+
+.more img{
+	height: 181.75px;
+	width: 272.633px;
 }
 
 .editor{
@@ -245,12 +251,26 @@ article {
 	display: grid;
 	font-size: 1.1875rem;
 	grid-template-columns: 1fr;
-	
 }
 
-.mostpopular div{
+.mostpopular a{
+	color: rgb(18, 18, 18);
+	font-family: 'NYTCheltenhamCond Medium';
+	font-size: 19px;;
+	text-decoration: none;
 	border-bottom: 1px solid rgb(226, 226, 226);
+	font-weight: 500;
+	line-height: 23px;
+	text-decoration-color: rgb(18, 18, 18);
 	width: 300px;
+}
+
+.mostpopular a:hover{
+	color: rgb(102, 102, 102);
+	cursor: pointer;
+}
+.mostpopular div{
+
 }
 
 
