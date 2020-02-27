@@ -157,6 +157,11 @@ article {
 	text-align: left;	
 }
 
+#writer {	
+	font-family: 'NYTFranklin Bold';
+	font-size: 15px;
+	text-decoration: none;
+}
 #main_pf_span {
 	color: #888;
 	letter-spacing: 0.01em;
@@ -185,11 +190,18 @@ article {
 	margin-bottom: 0.9375rem;
 }
 
-.text_01 hr{
-	width: 70px;
+.text_01 hr {
+	width: 72px;
+	border: 1px solid rgb(204, 204, 204);
 }
 
-.add_01 {
+.second_title {
+	grid-column: 2/3;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.ad_01 {
 	text-align: center;
 	font-size: 15px;
 	font-weight: 700;
@@ -199,7 +211,10 @@ article {
 	color: #333;
 }
 
-#link_add_01 {
+.text_01_link {
+		color: rgb(50, 104, 145);
+}
+#link_ad_01 {
 	text-decoration: none;
 	color: rgb(50, 104, 145);
 }
