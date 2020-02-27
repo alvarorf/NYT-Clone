@@ -220,11 +220,35 @@ article {
 }
 
 .theoryofinflation {
-	grid-column: 2/3;
+	grid-column: 1/4;
 }
 #theory_picture {
 	width: 100%;
 }
+
+.theory_grid {
+	grid-column: 1/4;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	/*grid-template-rows: repeat(4, 1fr);*/
+	background-repeat: no-repeat;
+	background-image: url('https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png');
+	background-size: 100% 100%;
+}
+
+#title_theory {
+	grid-column: 1/5;
+}
+
+#theory_second_t {
+	grid-column: 1/5;
+}
+
+#grid_footer {
+	grid-column: 1/5;
+}
+
+/* ARTICLE */	
 
 .moreinfo{
 	display: grid;
