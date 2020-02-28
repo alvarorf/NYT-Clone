@@ -287,7 +287,7 @@ article {
 			"more more more mostpopular"
 			"more more more mostpopular"
 			"editor editor editor mostpopular";
-	width: 1024px;
+	max-width: 1200px;
 }
 
 .bottom {
@@ -369,18 +369,33 @@ article {
 .related_pages{
 	border-top: 2px double gray;
 	display: grid;
-	grid-template-columns: 5fr 1fr;
-	grid-template-rows: 1fr 9fr;
+	grid-template-areas:
+		"head head head head head head"
+		"cont cont cont cont cont subs";
+	grid-template-columns: repeat(6,1fr);
+	grid-template-rows: 1fr 5fr;
 	margin: 0 auto 0 auto;
 	max-width: 1200px;
 	padding: 0 3% 9px 3%;
 
 }
 
-.relpageshead{
+.relhead{
 	display: flex;
+	grid-area: head;
 	justify-content: space-between;
 }
+
+.relcont{
+	display: grid;
+	grid-area: cont;
+}
+
+.relpagsubs{
+	display: grid;
+	grid-area: subs;
+}
+
 
 #nytlogorel{
 	display: inherit;
@@ -501,6 +516,8 @@ header {
 footer {
 	display: flex;
 	text-decoration: none;
+	justify-content: space-around;
+	width: 1200px;
 }
 
 footer a{
