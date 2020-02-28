@@ -291,6 +291,7 @@ article {
 
 .moreinfo {
 	display: grid;
+	grid-area: moreinfo;
 	grid-template-columns: repeat(4,1fr);
 	grid-template-rows: 1fr 1fr 1fr;
 	grid-template-areas: 
@@ -298,11 +299,18 @@ article {
 			"more more more mostpopular"
 			"editor editor editor mostpopular";
 	max-width: 1200px;
+	height: 800px;
 }
 
 .bottom {
-	width: 1024px;
+	display: grid;
 	grid-column: 1/4;
+	grid-template-areas: 
+		"moreinfo"
+		"related_pages"
+		"navfooter";
+	grid-template-rows: 20fr 18fr 1fr;
+	width: 1200px;
 }
 
 .more {
@@ -320,6 +328,10 @@ article {
 	justify-content: space-around;
 	margin: 0 auto 0 auto;
 	padding-top: 20px;
+}
+
+.moreinfo figure img{
+	width: 272px;
 }
 
 .moret {
@@ -379,13 +391,14 @@ article {
 .related_pages {
 	border-top: 2px double gray;
 	display: grid;
+	grid-area: related_pages;
 	grid-template-areas:
 		"head head head head head head"
 		"news opinion arts living relmore subs"
 		"news opinion arts living relmore lang";
 	grid-template-columns: repeat(6,1fr);
 	grid-template-rows: 1fr 5fr;
-	margin: 0 auto 0 auto;
+	margin: 0 auto 0 0;
 	padding: 0 3% 9px 3%;
 	width: auto;
 
@@ -443,6 +456,7 @@ article {
 	display: grid;
 	grid-template-rows: 2fr 1fr;
 	grid-area: subs;
+	width: 197px;
 }
 
 .lang {
@@ -573,6 +587,7 @@ header {
 
 footer {
 	display: flex;
+	grid-area: footer;
 	text-decoration: none;
 	justify-content: space-around;
 	width: 1200px;
@@ -581,4 +596,10 @@ footer {
 footer a {
 	color: #666;
 	font-size: 11px;
+}
+
+.navfooter{
+	display: flex;
+	justify-content: space-around;
+	grid-area: navfooter;
 }
