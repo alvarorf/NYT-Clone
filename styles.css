@@ -110,6 +110,7 @@ article {
 
 #header_text01 {
 	grid-column: 2/3;
+	width: 600px;
 }
 
 #header_date_text01 {
@@ -123,11 +124,17 @@ article {
 .text_01 {
 	grid-column: 2/3;
 	font-family: NYTImperial;
-	font-size: 1.25rem;
+	/*font-size: 1.25rem;*/
+	font-size: 21.5px;
 	font-weight: 400;
 	color: #333;
 	line-height: 1.875rem;
 	margin-bottom: 0.9375rem;
+	width: 600px;
+}
+
+.text_01 p {
+	margin-bottom: 15px;
 }
 
 .text_01 hr {
@@ -160,9 +167,9 @@ article {
 
 .editor_top {
 	grid-column: 3/4;
-	grid-row: 3/20;
+	grid-row: 3/9;
 	margin: auto;
-	margin-left: 100px;
+	margin-left: 50px;
 }
 
 .editor_top img {
@@ -241,15 +248,37 @@ article {
 	font-weight: 500;
 }
 
-#video_text,
-.second_picture {
+.video_text {
 	grid-column: 2/3;
-	width: 100%
+	width: 600px;
 }
 
-.second_picture img{
-	width: 100%;
+.second_picture {
+	grid-column: 1/4;
+	display: grid;
+	grid-template-columns: auto 720px auto;
+	grid-template-areas: 
+				 "column1 img2 column2"
+				 "column1 footer2 column2";	
 }
+
+.second_picture img {
+	grid-area: img2;
+	max-width: 720px;
+}
+
+.second_picture p {
+	grid-area: footer2;
+	/*width: 660px;*/
+	font-family: NYTImperial;
+	font-size: 15px;
+	line-height: 20px;
+	font-weight: 400;
+	color: rgb(102, 102, 102);
+	margin-right: 10px;
+	vertical-align: baseline;
+}
+
 /* ARTICLE */	
 
 .moreinfo {
