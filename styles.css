@@ -63,7 +63,7 @@ html {
 
 /* END OF CSS RESET */
 
-a{
+a {
 	text-decoration: none;
 }
 
@@ -81,7 +81,7 @@ body {
 	width: 1920px;
 }
 
-nav{
+nav {
 	align-items: center;
 	border-bottom: 1px solid rgb(226, 226, 226);
 	display: inline-grid;
@@ -94,16 +94,16 @@ nav{
 	width: 1920px;
 }
 
-nav a{
+nav a {
 	text-decoration: none;
 	grid-column: 11/16;
 }
 
-nav img{
+nav img {
 	align-self: center;
 	grid-column: 43/94;
 }
-nav >*{
+nav >* {
 	border:0px;
 }
 
@@ -174,15 +174,15 @@ article {
 	font-size: 14px;
 }
 
-#header_text01{
+#header_text01 {
 	grid-column: 2/3;
 }
 
-#header_date_text01{
+#header_date_text01 {
 	float: left;
 }
 
-#header_icons_text01{
+#header_icons_text01 {
 	float: right;
 }
 
@@ -312,24 +312,24 @@ article {
 	padding-top: 20px;
 }
 
-.moret{
+.moret {
 	grid-column:1/4;
 	height: 15px;
 	width: 700px;
 }
 
-.more img{
+.more img {
 	height: 181.75px;
 	width: 272.633px;
 }
 
-.editor{
+.editor {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-column: 1/3;
 }
 
-.mostpopular{
+.mostpopular {
 	color: rgb(102, 102, 102);
 	display: grid;
 	font-size: 1.1875rem;
@@ -338,7 +338,7 @@ article {
 	width: 280px;
 }
 
-.mostpopular a{
+.mostpopular a {
 	color: rgb(18, 18, 18);
 	font-family: 'NYTCheltenhamCond Medium';
 	font-size: 19px;
@@ -350,12 +350,12 @@ article {
 	width: 300px;
 }
 
-.mostpopular a:hover{
+.mostpopular a:hover {
 	color: rgb(102, 102, 102);
 	cursor: pointer;
 	text-decoration: none;
 }
-.mostpopular div{
+.mostpopular div {
 	border-bottom: 1px solid rgb(226, 226, 226);
 	border-top: 1px solid rgb(51, 51, 51);
 	color: #333;
@@ -366,12 +366,13 @@ article {
 	width: 300px;
 }
 
-.related_pages{
+.related_pages {
 	border-top: 2px double gray;
 	display: grid;
 	grid-template-areas:
 		"head head head head head head"
-		"cont cont cont cont cont subs";
+		"cont cont cont cont cont subs"
+		"cont cont cont cont cont lang";
 	grid-template-columns: repeat(6,1fr);
 	grid-template-rows: 1fr 5fr;
 	margin: 0 auto 0 auto;
@@ -380,29 +381,76 @@ article {
 
 }
 
-.relhead{
+.related_pages a {
+	color: rgb(0, 0, 0);
+}
+
+.related_pages a:hover {
+	text-decoration: underline;
+}
+
+.relhead {
 	display: flex;
 	grid-area: head;
 	justify-content: space-between;
 }
 
-.relcont{
+.relcont {
 	display: grid;
+	font-size: 14px;
+	grid-template-columns: repeat(5,150px);
 	grid-area: cont;
+	grid-template-areas: 
+	  "news opinion arts living relmore";
 }
 
-.relpagsubs{
+.relcont a{
+	display: inline-block;
+	color: rgb(0,0,0);
+	font-family: 'NYTFranklin';
+	font-size: 14px;
+	font-weight: 500;
+	height: 23px;
+	line-height: 16px;
+}
+
+.news {
+	grid-area: news;
+}
+
+.opinion {
+	grid-area: opinion;
+}
+
+.arts {
+	grid-area: arts;
+}
+
+.living {
+	grid-area: living;
+}
+
+.relmore {
+	grid-area: relmore;
+}
+
+.relpagsubs {
 	display: grid;
+	grid-template-rows: 2fr 1fr;
 	grid-area: subs;
 }
 
+.lang {
+	grid-area: lang;
+}
 
-#nytlogorel{
+
+#nytlogorel {
 	display: inherit;
 	justify-content: start;
 }
 
-#gohome{
+#gohome {
 	display: inherit;
 	justify-content: end;
 }
@@ -435,9 +483,7 @@ header {
 
 }*/
 
-
-
-.menu{
+.menu {
 	background: url('./img/menubtn.png');
 	background-position: center;
 	background-repeat: no-repeat;
@@ -447,7 +493,7 @@ header {
 	width: 35px;
 }
 
-.search{
+.search {
 	background: url('./img/search.png');
 	background-position: center;
 	background-repeat: no-repeat;
@@ -457,7 +503,7 @@ header {
 	width: 28px;
 }
 
-.spaceandcosmos{
+.spaceandcosmos {
 	box-sizing: content-box;
 	height: 15px;
 	vertical-align: middle;
@@ -465,12 +511,12 @@ header {
 	width: 128px;
 }
 
-#linkspaandcos{
+#linkspaandcos {
 	display: inline-grid;
 	grid-column: 5/8;
 }
 
-.bluebutton{
+.bluebutton {
 	align-self: center;
 	background-color: rgb(86, 123, 149);;
 	border: 1px solid rgb(51, 51, 51);
@@ -489,26 +535,32 @@ header {
 	text-transform: uppercase;
 }
 
-.bluebutton:hover{
+.bluebutton:hover {
 	background-color: rgb(50, 104, 145);
 	cursor: pointer;
 }
 
-#subscribe{
+#subscribe {
 	grid-column: 94/95;
 	margin-left: -109px;
 	width: 119px;
 }
 
-#log-in{
+#log-in {
 	grid-column: 95/97;
 	margin-left: -1px;
 	width: 63px;
 }
 
+.reltitles {
+	color: rgb(51, 51, 51);
+	font-family: 'NYTFranklin ExtraBold';
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 15px;
+}
 
-
-.theoryofinflation{
+.theoryofinflation {
 	grid-column:2-4;
 }
 
@@ -520,7 +572,7 @@ footer {
 	width: 1200px;
 }
 
-footer a{
+footer a {
 	color: #666;
 	font-size: 11px;
 }
