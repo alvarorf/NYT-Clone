@@ -1,67 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-/* CSS RESET */
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font: inherit;
-	font-size: 100%;
-	vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-
-body {
-	line-height: 1;	
-}
-
-ol, ul {
-	list-style: none;
-}
-
-blockquote, q {
-	quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-html {
-	-webkit-appearance: none;
-	-moz-appeareance: none;
-}
-
-/* END OF CSS RESET */
-
 a {
 	text-decoration: none;
 }
@@ -82,7 +18,6 @@ body {
 
 nav {
 	align-items: center;
-	border-bottom: 1px solid rgb(226, 226, 226);
 	display: inline-grid;
 	font-family: 'NYTFranklin';
 	grid-gap: 5px;
@@ -417,13 +352,14 @@ article {
 }
 
 .related_pages {
+	align-items: baseline;
 	border-top: 2px double gray;
 	display: grid;
 	grid-area: related_pages;
 	grid-template-areas:
 		"head head head head head head"
 		"news opinion arts living relmore subs"
-		"news opinion arts living relmore lang";
+		"news opinion arts living relmore subs";
 	grid-template-columns: repeat(6,1fr);
 	grid-template-rows: 1fr 5fr;
 	margin: 0 auto 0 0;
@@ -444,6 +380,7 @@ article {
 	display: flex;
 	grid-area: head;
 	justify-content: space-between;
+	margin-top: 10px;
 }
 
 .relcont {
@@ -481,16 +418,48 @@ article {
 }
 
 .relpagsubs {
+	border-left: 1px solid rgb(226, 226, 226);
 	display: grid;
-	grid-template-rows: 2fr 1fr;
 	grid-area: subs;
+	grid-gap: 5px;
+	grid-template-areas: 
+		"sub1"
+		"sub2"
+		"lang";
+	grid-template-rows: 2fr 1fr;
 	width: 197px;
 }
 
+.subs1{
+	grid-area: sub1;
+}
+
+.subs1 ul li{
+	height: 25px;
+	font-weight: 700;
+}
+
+.subs1 li{
+	font-size: 15px;
+	line-height: 25px;
+}
+
+.subs2{
+	grid-area: sub2;
+}
+
+.subs2 ul li, .lang ul li, .related_pages ul li{
+	height: 23px;
+}
+
 .lang {
+	border-top: 1px solid rgb(226, 226, 226);
 	grid-area: lang;
 }
 
+#titlesubs1{
+	height: 30px;
+}
 
 #nytlogorel {
 	display: inherit;
@@ -618,7 +587,7 @@ footer {
 	grid-area: footer;
 	text-decoration: none;
 	justify-content: space-around;
-	width: 1200px;
+	width: 1150px;
 }
 
 footer a {
@@ -627,7 +596,9 @@ footer a {
 }
 
 .navfooter{
+	border-top: 1px solid #ebebeb;
 	display: flex;
 	justify-content: space-around;
 	grid-area: navfooter;
+	width: 1200px;
 }
