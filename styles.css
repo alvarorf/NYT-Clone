@@ -63,6 +63,10 @@ html {
 
 /* END OF CSS RESET */
 
+a{
+	text-decoration: none;
+}
+
 @font-face {
   font-family: myFirstFont;
   src: url(sansation_light.woff);
@@ -491,4 +495,15 @@ header {
 
 .theoryofinflation{
 	grid-column:2-4;
+}
+
+
+footer {
+	display: flex;
+	text-decoration: none;
+}
+
+footer a{
+	color: #666;
+	font-size: 11px;
 }
