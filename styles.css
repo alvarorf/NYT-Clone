@@ -33,8 +33,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-	line-height: 1;
-	
+	line-height: 1;	
 }
 
 ol, ul {
@@ -228,21 +227,20 @@ article {
 	grid-column: 3/4;
 	grid-row: 3/20;
 	margin: auto;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(4, 1fr);
+	margin-left: 100px;
 }
 
 .editor_top img {
 	height: 75px;
 	width: 75px;
-	grid-column: 1/2;
 }
 
-
 .editor_titles {
-	grid-row: ;
-	grid-column: 2/3;
+	float: right;
+	width: 110px;
+	margin-left: 10px ;
+	font-size: 14px;
+	font-family: "NYTCheltenhamCond Light";
 }
 
 .theoryofinflation {
@@ -308,6 +306,15 @@ article {
 	font-weight: 500;
 }
 
+#video_text,
+.second_picture {
+	grid-column: 2/3;
+	width: 100%
+}
+
+.second_picture img{
+	width: 100%;
+}
 /* ARTICLE */	
 
 .moreinfo {
