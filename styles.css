@@ -371,13 +371,13 @@ article {
 	display: grid;
 	grid-template-areas:
 		"head head head head head head"
-		"cont cont cont cont cont subs"
-		"cont cont cont cont cont lang";
+		"news opinion arts living relmore subs"
+		"news opinion arts living relmore lang";
 	grid-template-columns: repeat(6,1fr);
 	grid-template-rows: 1fr 5fr;
 	margin: 0 auto 0 auto;
-	max-width: 1200px;
 	padding: 0 3% 9px 3%;
+	width: auto;
 
 }
 
@@ -396,12 +396,7 @@ article {
 }
 
 .relcont {
-	display: grid;
 	font-size: 14px;
-	grid-template-columns: repeat(5,150px);
-	grid-area: cont;
-	grid-template-areas: 
-	  "news opinion arts living relmore";
 }
 
 .relcont a{
@@ -558,6 +553,7 @@ header {
 	font-size: 13px;
 	font-weight: 700;
 	line-height: 15px;
+	width: auto;
 }
 
 .theoryofinflation {
