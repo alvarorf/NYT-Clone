@@ -283,7 +283,7 @@ article {
 	display: grid;
 	grid-template-columns: repeat(4,1fr);
 	grid-template-rows: 1fr 1fr 1fr;
-	grid-area: 
+	grid-template-areas: 
 			"more more more mostpopular"
 			"more more more mostpopular"
 			"editor editor editor mostpopular";
@@ -302,7 +302,7 @@ article {
 	grid-gap: 18px;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 4fr 4fr;
-	grid-area:
+	grid-template-areas:
 	    "moret moret moret"
 			"more1 more2 more3"
 			"more4 more5 more6";
