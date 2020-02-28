@@ -332,6 +332,31 @@ article {
 	width: 700px;
 }
 
+.moretfigcap {
+	color: rgb(153, 153, 153);
+	font-size: 0.625rem;
+	text-align: end;
+}
+
+.morettext{
+	font-size: 1.125rem;
+	line-height: 22px;
+}
+
+.morettext a{
+	color: rgb(18,18,18);
+}
+
+.morettext span{
+	color: rgb(153, 153, 153);
+	font-size: 12px;
+	font-family: 'NYTFranklin Bold';
+	font-weight: 500;
+	letter-spacing: 0.3px;
+	margin: 0;
+	text-align: left;
+}
+
 .more img {
 	height: 181.75px;
 	width: 272.633px;
