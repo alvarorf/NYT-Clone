@@ -51,7 +51,7 @@ a:hover{
 	height: auto;
 	width: 100%;
 	display: grid;
-	grid-template-columns: 1fr 1200px 1fr;
+	grid-template-columns: 1px 1100px 1px;
 	grid-gap: 10px;
 }
 
@@ -81,20 +81,29 @@ article {
 	padding-bottom: 10px;
 }
 
+.main_text{
+	margin-left: 60px;
+}
+
 #main_picture {
 	grid-column: 1/4;
-	width: 1200px;
-	height: 675px;
+	margin-left: 70px;
+	margin-right: 0;
+	max-width: 945px;
+	height:531px;
 }
 
 #main_pic_footer {
+	display: grid;
 	grid-column: 1/3;
-	font-size: 15px;
-	line-height: 20px;
+	font-size: 0.9375rem;
+	max-height: 37px;
+	line-height: 1.25rem;
+	margin: 10px 20px 0 50px;
 	font-weight: 400;
 	font-family: NYTImperial;
 	color: rgb(102, 102, 102);
-	text-align: left;	
+	max-width: 702px;
 }
 
 #writer {	
@@ -105,7 +114,11 @@ article {
 #main_pf_span {
 	color: #888;
 	letter-spacing: 0.01em;
+	font-family: 'NYTImperial';
 	font-size: 14px;
+	margin-left: 0px;
+	text-align: left;
+	width: 712px;
 }
 
 #header_text01 {
@@ -187,65 +200,97 @@ article {
 
 .theoryofinflation {
 	grid-column: 1/4;
+	width: 945px;
 }
 #theory_picture {
-	width: 100%;
+	width: 945px;
+	height: 576px;
 }
 
 .theory_box {
 	grid-column: 1/4;
 	display: grid;
-	grid-template-columns: 110px repeat(4, 1fr) 110px;
+	grid-template-columns: 0 repeat(4, 1fr) 0;
 	grid-template-areas: 
 				 "column1 title title title title column2"
 				 "column1 title2 title2 title2 title2 column2"
 				 "column1 cells cells  cells  cells column2"
 				 "column1 cells cells  cells  cells column2"
-				 "column1 footer footer footer footer column2";	
+				 "column1 footer footer footer footer column2";
+	width: 945px;
 }
 
 .theory_grid {
 	grid-area: cells;
 	display: grid;
+	height: 576px;
 	grid-gap: 10px;
 	grid-template-columns: repeat(4, 1fr);
 	background-repeat: no-repeat;
 	background-image: url('https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png');
-	background-size: 100% 100%;
+	background-size: 945px 576px;
 	font-family: 'NYTFranklin Light';
+	width: 945px;
 }
 
+.theory_cells strong{
+	color: #000;
+	font-family: 'NYTFranklin Bold';
+	font-weight: bold;
+	margin-right: 7px;
+}
 #title_theory {
 	grid-area: title;
 	font-size: 20px;
 	font-weight: 700;
 	line-height: 24px;
+	margin-bottom: 2px;
 	color: rgb(0, 0, 0);
-	padding: 10px;
+	padding: 0;
 }
 
 #theory_second_t {
 	grid-area: title2;
-	font-size: 14px;
+	font-family:'nyt-cheltenham-sh-400-normal';
+	font-size: 0.875rem;
+	height: 36px;
+	line-height: 1.125rem;
 	color: rgb(102, 102, 102);
-	padding: 10px;
+	margin-right: 7px;
+	padding: 0;
+	width: 904px;
 }
 
 .theory_cells {
-	padding-top: 200px;
+	padding-top: 145px;
+	font-family: 'NYTFranklin';
 	font-size: 14px;
 	font-weight: 300;
 	line-height: 17px;
 	color: rgb(0, 0, 0);
 }
 
+#cofee{
+	padding-top: 0;
+}
+
 #grid_footer {
-	grid-area: footer;
-	padding-top: 40px;
-	padding-bottom: 40px;
-	justify-self: start;
-	font-size: 14px;
+	color: #333;
+	padding: 0;
+	font-family: 'NYTCheltenham';
+	font-size: .875rem;
 	font-weight: 500;
+	height: 18px;
+	margin: 0 0 14px 0;
+	width: 945px;
+}
+
+#gridfooterdiv {
+	grid-area: footer;
+	height: 37.6px;
+	margin-top: 24px;
+	width: 945px;
+
 }
 
 .video_text {
@@ -291,7 +336,7 @@ article {
 			"more more more mostpopular"
 			"editor editor editor mostpopular";
 	max-width: 1200px;
-	height: 800px;
+	height: 1200px;
 }
 
 .bottom {
@@ -309,21 +354,57 @@ article {
 	border-top: 1px solid rgb(51, 51, 51);
 	display: grid;
 	grid-auto-flow: row;
+	grid-area: more;
 	grid-gap: 18px;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 4fr 4fr;
 	grid-template-areas:
 	    "moret moret moret"
-			"more1 more2 more3"
-			"more4 more5 more6";
+			"more1 more1 more1"
+			"more1 more1 more1";
 	height: 510px;
 	justify-content: space-around;
 	margin: 0 auto 0 auto;
 	padding-top: 20px;
 }
 
+.editor{
+	border-top: 1px solid rgb(51, 51, 51);
+	display: grid;
+	grid-auto-flow: row;
+	grid-area: editor;
+	grid-gap: 18px;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 4fr;
+	grid-template-areas:
+			"editort editort editort"
+	    "ed1 ed1 ed1";
+	height: 250px;
+	justify-content: space-around;
+	margin: -21% auto 0 auto;
+	padding-top: 20px;
+	width: 875px;
+}
+
 .moreinfo figure img{
 	width: 272px;
+}
+
+.editort{
+	color: #333;
+	font-family: 'NYTFranklin Bold';
+	grid-area: editort;
+	grid-column: 1/4;
+	height: 15px;
+	width: 700px;
+}
+
+.editort:hover {
+	text-decoration: underline;
+}
+
+.ed1{
+	grid-area: ed1;
 }
 
 .moret {
@@ -335,6 +416,7 @@ article {
 }
 
 .moret:hover{
+	cursor: pointer;
 	text-decoration: underline;
 }
 
@@ -345,7 +427,6 @@ article {
 	line-height: 1.23em;
 	margin: 3px 0px 0px 0px;
 	text-align: end;
-	
 }
 
 .morettext{
@@ -354,7 +435,7 @@ article {
 	line-height: 22px;
 }
 
-.more1 a{
+.more1 a, .editor1 a{
 	color: rgb(18,18,18);
 	font-weight: 500;
 	font-family: 'NYTCheltenham';
@@ -362,12 +443,12 @@ article {
 	line-height: 1.375rem;
 }
 
-.more1 p:hover{
+.more1 p:hover, .editor1 p:hover{
 	cursor: pointer;
 	color: rgb(102, 102, 102);
 }
 
-.more1 span{
+.more1 span, .editor1 span{
 	color: rgb(153, 153, 153);
 	font-family: 'NYTFranklin ExtraBold';
 	font-size: 12px;
@@ -377,7 +458,37 @@ article {
 	text-align: left;
 }
 
-.more img {
+.articlebottom{
+	grid-column: 2/3;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas:
+		"top top top"
+		"readc readc social";
+	height: 92px;
+	width: 600px;
+}
+
+.artbottomfooter{
+	color: #333;
+	font-family:'NYTFranklin';
+	font-size: 0.75rem;
+	font-weight: 100;
+	grid-area: top;
+	height: 32px;
+	line-height: 1rem;
+	margin: 0 auto 1em auto;
+	max-width: 600px;
+}
+ .artbottomfooter a{
+	color: #333;
+	text-decoration: underline;
+ }
+.artbottomfooter a:hover{
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.more img, .editor img{
 	height: 181.75px;
 	width: 272.633px;
 }
@@ -389,26 +500,37 @@ article {
 }
 
 .mostpopular {
+	box-sizing: border-box;
 	color: rgb(102, 102, 102);
 	display: grid;
 	font-size: 1.1875rem;
+	grid-area: mostpopular;
+	grid-gap: 10px;
 	grid-template-columns: 1fr;
-	padding-left: 30px;
-	width: 280px;
+	height: 39px;
+	margin: 0 0 10px 10px;
+	padding: 0;
+	width: 315px;
 }
 
 .mostpopular a {
+	box-sizing: border-box;
 	color: rgb(18, 18, 18);
 	font-family: 'NYTCheltenham';
 	font-size: 1.1875rem;
+	height: 81px; 
 	text-decoration: none;
-	border-bottom: 1px solid rgb(226, 226, 226);
+	border-top: 1px solid rgb(226, 226, 226);
 	font-weight: 500;
 	line-height: 1.4375rem;
-	margin: 0;
+	margin: 0 0 0 0;
 	padding: 15px 0 15px 0; 
 	text-decoration-color: rgb(18, 18, 18);
-	width: 300px;
+	width: 315px;
+}
+.mostpopular a[href="https://www.nytimes.com/2020/02/27/travel/what-to-do-36-hours-in-queenstown.html?algo=top_conversion&fellback=false&imp_id=100751225&imp_id=302800941&action=click&module=trending&pgtype=Article&region=Footer"] {
+	border-top: 1px solid rgb(226, 226, 226);
+	margin-bottom: -25px;
 }
 
 .mostpopular a:hover {
@@ -417,16 +539,21 @@ article {
 	text-decoration: none;
 }
 .mostpopular div {
-	border-bottom: 1px solid rgb(226, 226, 226);
 	border-top: 1px solid rgb(51, 51, 51);
 	color: #333;
 	font-family: 'NYTFranklin Bold';
 	font-size: 16px;
+	height: 39px;
 	line-height: 22px;
+	margin-bottom: -10px;
 	padding-top: 17px;
-	width: 300px;
+	width: 315px;
 }
 
+.mostpopular:first-child {
+	color: green;
+	border-bottom: 1px solid rgb(226, 226, 226);
+}
 .related_pages {
 	align-items: baseline;
 	border-top: 2px double gray;
