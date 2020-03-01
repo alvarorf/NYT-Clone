@@ -327,30 +327,50 @@ article {
 }
 
 .moret {
-	grid-column:1/4;
+	color: black;
+	font-family: 'NYTFranklin Bold';
+	grid-column: 1/4;
 	height: 15px;
 	width: 700px;
 }
 
+.moret:hover{
+	text-decoration: underline;
+}
+
 .moretfigcap {
 	color: rgb(153, 153, 153);
+	font-family: 'NYTCheltenham';
 	font-size: 0.625rem;
+	line-height: 1.23em;
+	margin: 3px 0px 0px 0px;
 	text-align: end;
+	
 }
 
 .morettext{
+	padding-top: 5px;
 	font-size: 1.125rem;
 	line-height: 22px;
 }
 
-.morettext a{
+.more1 a{
 	color: rgb(18,18,18);
+	font-weight: 500;
+	font-family: 'NYTCheltenham';
+	font-size: 1.125rem;
+	line-height: 1.375rem;
 }
 
-.morettext span{
+.more1 p:hover{
+	cursor: pointer;
+	color: rgb(102, 102, 102);
+}
+
+.more1 span{
 	color: rgb(153, 153, 153);
+	font-family: 'NYTFranklin ExtraBold';
 	font-size: 12px;
-	font-family: 'NYTFranklin Bold';
 	font-weight: 500;
 	letter-spacing: 0.3px;
 	margin: 0;
@@ -379,12 +399,14 @@ article {
 
 .mostpopular a {
 	color: rgb(18, 18, 18);
-	font-family: 'NYTCheltenhamCond Medium';
-	font-size: 19px;
+	font-family: 'NYTCheltenham';
+	font-size: 1.1875rem;
 	text-decoration: none;
 	border-bottom: 1px solid rgb(226, 226, 226);
 	font-weight: 500;
-	line-height: 23px;
+	line-height: 1.4375rem;
+	margin: 0;
+	padding: 15px 0 15px 0; 
 	text-decoration-color: rgb(18, 18, 18);
 	width: 300px;
 }
