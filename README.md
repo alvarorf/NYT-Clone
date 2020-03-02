@@ -2,7 +2,7 @@
 
 > Welcome to our NYT Clone, built with html and css. Please enjoy and leave a comment. 
 
-![screenshot](./app_screenshot.png)
+![screenshot](https://user-images.githubusercontent.com/60085697/75701427-88e65b00-5c92-11ea-90b0-ac940e2d249b.png)
 
 Additional description about the project and its features.
 

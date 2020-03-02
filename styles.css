@@ -912,7 +912,10 @@ article {
   grid-area: lang;
 }
 
-#titlesubsa {
+#titlesubsa,
+#titlesubsb,
+#titlesubsc,
+#titlesubsd {
   color: #000;
   display: inline-block;
   font-family: "NYTFranklin ExtraBold", sans-serif;
