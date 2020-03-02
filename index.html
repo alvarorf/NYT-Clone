@@ -48,7 +48,8 @@
         <p id="writer">By <a href="http://www.nytimes.com/by/dennis-overbye"><span>Dennis Overbye</span></a></p>
         <br>
         <p id="header_date_text01">March 17, 2014</p>
-        <div id="header_icons_text01"> <img src="#" alt=""> <img src="#" alt=""> <img src="#" alt=""></div>
+        <div id="header_icons_text01"> <img src="/img/facebookicon.png" alt="fecebook icon"> <img src="/img/twittericon.png" alt="twitter icon"> <img src="/img/emailicon.png" alt="email icon">
+          <img src="/img/savearticleicon.png" alt="save article icon"><img src="/img/commentsicon.png" alt="see comments icon"></div>
       </header>
 
       <div class="text_01">
@@ -94,14 +95,14 @@
       </div>
 
       <div class="text_01">
-        <hr>
+        <div class="unlock"></div>
         <div class="ad_01">Unlock more free articles.</div>
         <div class="ad_01">
           <a id="link_ad_01"
             href="https://myaccount.nytimes.com/auth/register?application=Free_Experience&asset=InlineMessage&campaignId=7QF7X&client_id=freex&redirect_uri=https%3A%2F%2Fwww.nytimes.com%2Fsubscription%2Fmultiproduct%2Flp8KQUS.html%3FEXIT_URI%3Dhttps%3A%2F%2Fwww.nytimes.com%2F2014%2F03%2F18%2Fscience%2Fspace%2Fdetection-of-waves-in-space-buttresses-landmark-theory-of-big-bang.html%26campaignID%3D7QF7X&response_type=cookie">
             Create an account or log in</a>
         </div>
-        <hr>
+        <div class="unlock"></div>
       </div>
 
       <div class="text_01">
@@ -399,12 +400,17 @@
           A version of this article appears in print on March 18, 2014, Section A, Page 1 of the New York edition with the headline: Space Ripples Reveal Big Bang’s Smoking Gun. 
           <a href="http://www.nytreprints.com/"> Order Reprints</a> | <a href="https://www.nytimes.com/section/todayspaper">Today’s Paper</a> | <a href="https://www.nytimes.com/subscriptions/Multiproduct/lp8HYKU.html?campaignId=48JQY">Subscribe</a>
         </div>
+        <div class="socialb">
+          <button class="bluebutton">READ 615 COMMENTS</button>
+          <nav class="socialicons"><img alt="socialbuttons" src="img/socialbuttons.png"></nav>
+        </div>
+        
       </div>
 
       <div class="bottom">
 
         <article class="moreinfo">
-          <h2></h2>
+          <h2>Heading</h2>
           <div class="more">
               <div class="moret">More in Space and Astronomy
               </div>
@@ -665,26 +671,27 @@
           <div class="relpagsubs">
             <div class="subs1">
               <ul>
-                <li class="relpagsubs reltitles" id="titlesubs1">SUBSCRIBE</li>
+                <li class="reltitles" >SUBSCRIBE</li>
                 <li>
-                  <a href="https://www.nytimes.com/hdleftnav">
-                    <img src="img/homedelivery.png" alt="home delivery icon">
+                  <img class="subsicon" src="img/homedelivery.png" alt="home delivery icon">
+                  <a id="titlesubsa" href="https://www.nytimes.com/hdleftnav">
                     Home Delivery
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.nytimes.com/digitalleftnav">
-                    <img src="img/digitalsubscriptions.png" alt="digital subscriptions icon">
+                  <img class="subsicon" src="img/digitalsubscriptions.png" alt="digital subscriptions icon">
+                  <a id="titlesubsa" href="https://www.nytimes.com/digitalleftnav">
                     Digital Subscriptions
                   </a>
                 </li>
                 <li>
-                  <img src="img/crossword.png" alt="crossword icon">
-                  <a href="https://www.nytimes.com/subscription/crosswords">Crossword</a>
+                  <img class="subsicon" src="img/crossword.png" alt="crossword icon">
+                  <a id="titlesubsa" href="https://www.nytimes.com/subscription/crosswords">
+                    Crossword</a>
                 </li>
                 <li>
-                  <img src="img/cooking.png" alt="cooking icon">
-                  <a href="https://www.nytimes.com/subscription/cooking.html">Cooking</a>
+                  <img class="subsicon" src="img/cooking.png" alt="cooking icon">
+                  <a id="titlesubsa" href="https://www.nytimes.com/subscription/cooking.html">Cooking</a>
                 </li>
               </ul>
             </div>
