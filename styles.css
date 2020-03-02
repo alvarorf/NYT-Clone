@@ -47,8 +47,11 @@
   src: url("fonts/nyt-cheltenham-sh-400-normal.woff");
 }
 
+html {
+  overflow-x: scroll;
+}
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 a {
