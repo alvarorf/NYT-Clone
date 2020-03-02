@@ -85,7 +85,7 @@ body {
   grid-template-rows: 1fr;
   max-height: 36px;
   padding: 0 0 2px 0;
-  margin: 4px 0 0 -2px;
+  margin: 4px auto 0 auto;
   width: 1351px;
 }
 
