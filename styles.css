@@ -49,14 +49,11 @@
 
 html {
   overflow-x: scroll;
-}
-* {
-	box-sizing: border-box;
+  width: 100%;
 }
 
-html {
-  overflow-x: scroll;
-  width: 100%;
+* {
+  box-sizing: border-box;
 }
 
 a {
@@ -445,7 +442,7 @@ article {
     "column1 cells cells cells cells column2"
     "column1 cells cells cells cells column2"
     "column1 footer footer footer footer column2";
-    margin-left: 50px;
+  margin-left: 50px;
   width: 945px;
 }
 
