@@ -51,6 +51,10 @@
   box-sizing: border-box;
 }
 
+html {
+  width: 100%;
+}
+
 a {
   text-decoration: none;
 }
@@ -69,7 +73,7 @@ footer a {
 
 body {
   color: #333;
-  width: 1500px;
+  width: auto;
 }
 
 #mainnav {
@@ -437,7 +441,7 @@ article {
     "column1 cells cells cells cells column2"
     "column1 cells cells cells cells column2"
     "column1 footer footer footer footer column2";
-  margin-left: 100px;
+    margin-left: 50px;
   width: 945px;
 }
 
@@ -912,6 +916,7 @@ article {
 
 .lang {
   margin-left: 5px;
+  padding-top: 10px;
   border-top: 1px solid rgb(226, 226, 226);
   grid-area: lang;
 }
@@ -1013,9 +1018,9 @@ button[class="menu"] {
 .navfooter {
   border-top: 1px solid #ebebeb;
   display: flex;
+  grid-column: 2/3;
   height: 40px;
   justify-content: space-around;
-  grid-area: navfooter;
   padding-top: 10px;
   width: 1150px;
 }
