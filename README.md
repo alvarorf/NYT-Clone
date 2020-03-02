@@ -14,7 +14,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](Comming_soon!!)
+[Live Demo Link](https://raw.githack.com/alvarorf/NYT-Clone/feature-branch/index.html)
 
 
 ## Getting Started
