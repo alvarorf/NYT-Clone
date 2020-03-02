@@ -1,18 +1,17 @@
-
 a {
   text-decoration: none;
 }
 
 footer {
-	display: flex;
-	text-decoration: none;
+  display: flex;
+  text-decoration: none;
   justify-content: space-around;
   width: 1050px;
 }
 
 footer a {
-	color: #666;
-	font-size: 10.5px;
+  color: #666;
+  font-size: 10.5px;
 }
 
 @font-face {
@@ -27,7 +26,7 @@ body {
 #mainnav {
   align-items: center;
   display: grid;
-  font-family: 'NYTFranklin', sans-serif;
+  font-family: "NYTFranklin", sans-serif;
   grid-gap: 5px;
   grid-template-columns: repeat(100, 1fr);
   grid-template-rows: 1fr;
@@ -82,7 +81,7 @@ article {
   color: rgb(18, 18, 18);
   font-style: italic;
   font-weight: 700;
-  font-family: 'NYTCheltenham', sans-serif;
+  font-family: "NYTCheltenham", sans-serif;
   justify-self: start;
   align-self: end;
   padding-top: 40px;
@@ -109,7 +108,7 @@ article {
   line-height: 1.25rem;
   margin: 10px 20px 50px 100px;
   font-weight: 400;
-  font-family: 'NYTImperial', sans-serif;
+  font-family: "NYTImperial", sans-serif;
   color: rgb(102, 102, 102);
   max-width: 702px;
 }
@@ -117,7 +116,7 @@ article {
 #main_pf_span {
   color: #888;
   letter-spacing: 0.01em;
-  font-family: 'NYTImperial', sans-serif;
+  font-family: "NYTImperial", sans-serif;
   font-size: 14px;
   margin-left: 0;
   text-align: left;
@@ -132,7 +131,7 @@ article {
 #header_date_text01 {
   color: rgb(0, 0, 0);
   display: inline-block;
-  font-family: 'NYTFranklin', sans-serif;
+  font-family: "NYTFranklin", sans-serif;
   font-size: 0.8125rem;
   font-weight: 400;
   line-height: 1rem;
@@ -145,7 +144,7 @@ article {
 
 .text_01 {
   grid-column: 2/3;
-  font-family: 'NYTImperial', sans-serif;
+  font-family: "NYTImperial", sans-serif;
   font-size: 21.5px;
   font-weight: 400;
   color: #333;
@@ -174,7 +173,7 @@ article {
   font-size: 15px;
   font-weight: 700;
   line-height: 1.75rem;
-  font-family: 'NYTFranklin Bold', sans-serif;
+  font-family: "NYTFranklin Bold", sans-serif;
   color: #333;
 }
 
@@ -202,7 +201,7 @@ article {
 
 .editor_titles {
   color: rgb(51, 51, 51);
-  font-family: 'NYTCheltenham', sans-serif;
+  font-family: "NYTCheltenham", sans-serif;
   font-size: 14px;
   font-weight: 500;
   float: right;
@@ -211,18 +210,18 @@ article {
 }
 
 .editortopgrid {
-	display: grid;
-	grid-template-areas:
-		"top top"
-		"edt1 edt1"
-		"edt2 edt2"
-		"edt3 edt3";
+  display: grid;
+  grid-template-areas:
+    "top top"
+    "edt1 edt1"
+    "edt2 edt2"
+    "edt3 edt3";
 }
 
 .editortopgridt {
   border-bottom: 1px solid rgb(226, 226, 226);
   color: rgb(0, 0, 0);
-  font-family: 'NYTFranklin Bold', sans-serif;
+  font-family: "NYTFranklin Bold", sans-serif;
   font-size: 14px;
   grid-area: top;
   letter-spacing: 0.02em;
@@ -252,7 +251,42 @@ article {
   align-items: center;
   display: grid;
   grid-template-columns: 3fr 5fr;
-	grid-template-areas: "a b";
+  grid-template-areas: "a b";
+}
+
+.second_picture {
+  grid-column: 1/4;
+  display: grid;
+  grid-template-columns: auto 720px auto;
+  grid-template-areas:
+    "column1 img2 column2"
+    "column1 footer2 column2";
+}
+
+.second_picture p {
+  grid-area: footer2;
+  font-family: "NYTImperial", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  color: rgb(102, 102, 102);
+  margin-right: 10px;
+  vertical-align: baseline;
+}
+
+.second_picture img {
+  grid-area: img2;
+  max-width: 720px;
+}
+
+.more img,
+.editor img {
+  height: 181.75px;
+  width: 272.633px;
+}
+
+.moreinfo figure img {
+  width: 272px;
 }
 
 .editor_cell01 .cell01 a img {
@@ -265,7 +299,7 @@ article {
 }
 
 .cell p {
-  font-family: 'nyt-cheltenham-sh-400-normal', sans-serif;
+  font-family: "nyt-cheltenham-sh-400-normal", sans-serif;
   grid-area: b;
 }
 
@@ -287,12 +321,12 @@ article {
   grid-column: 1/4;
   display: grid;
   grid-template-columns: 0 repeat(4, 1fr) 0;
-	grid-template-areas:
+  grid-template-areas:
     "column1 title title title title column2"
-		"column1 title2 title2 title2 title2 column2"
-		"column1 cells cells cells cells column2"
-		"column1 cells cells cells cells column2"
-		"column1 footer footer footer footer column2";
+    "column1 title2 title2 title2 title2 column2"
+    "column1 cells cells cells cells column2"
+    "column1 cells cells cells cells column2"
+    "column1 footer footer footer footer column2";
   margin-left: 100px;
   width: 945px;
 }
@@ -304,15 +338,15 @@ article {
   grid-gap: 10px;
   grid-template-columns: repeat(4, 1fr);
   background-repeat: no-repeat;
-  background-image: url('https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png');
+  background-image: url("https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png");
   background-size: 945px 576px;
-  font-family: 'NYTFranklin Light', sans-serif;
+  font-family: "NYTFranklin Light", sans-serif;
   width: 945px;
 }
 
 .theory_cells strong {
   color: #000;
-  font-family: 'NYTFranklin Bold', sans-serif;
+  font-family: "NYTFranklin Bold", sans-serif;
   font-weight: bold;
   margin-right: 7px;
 }
@@ -329,7 +363,7 @@ article {
 
 #theory_second_t {
   grid-area: title2;
-  font-family: 'nyt-cheltenham-sh-400-normal', sans-serif;
+  font-family: "nyt-cheltenham-sh-400-normal", sans-serif;
   font-size: 0.875rem;
   height: 36px;
   line-height: 1.125rem;
@@ -341,7 +375,7 @@ article {
 
 .theory_cells {
   padding-top: 145px;
-  font-family: 'NYTFranklin', sans-serif;
+  font-family: "NYTFranklin", sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 17px;
@@ -355,7 +389,7 @@ article {
 #grid_footer {
   color: #333;
   padding: 0;
-	font-family: 'NYTCheltenham', sans-serif;
+  font-family: "NYTCheltenham", sans-serif;
   font-size: 0.875rem;
   font-weight: 500;
   height: 18px;
@@ -372,32 +406,7 @@ article {
 
 .video_text {
   grid-column: 2/3;
-	width: 600px;
-}
-
-.second_picture {
-  grid-column: 1/4;
-  display: grid;
-  grid-template-columns: auto 720px auto;
-	grid-template-areas:
-		"column1 img2 column2"
-		"column1 footer2 column2";
-}
-
-.second_picture img {
-  grid-area: img2;
-  max-width: 720px;
-}
-
-.second_picture p {
-  grid-area: footer2;
-  font-family: 'NYTImperial', sans-serif;
-  font-size: 15px;
-  line-height: 20px;
-  font-weight: 400;
-  color: rgb(102, 102, 102);
-  margin-right: 10px;
-  vertical-align: baseline;
+  width: 600px;
 }
 
 /* ARTICLE */
@@ -406,11 +415,11 @@ article {
   display: grid;
   grid-area: moreinfo;
   grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: 1fr 1fr 1fr;
-	grid-template-areas:
-		"more more more mostpopular"
-		"more more more mostpopular"
-		"editor editor editor mostpopular";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "more more more mostpopular"
+    "more more more mostpopular"
+    "editor editor editor mostpopular";
   max-width: 1200px;
   height: 1200px;
 }
@@ -428,10 +437,10 @@ article {
 .bottom {
   display: grid;
   grid-column: 1/4;
-	grid-template-areas:
-		"moreinfo"
-		"related_pages"
-		"navfooter";
+  grid-template-areas:
+    "moreinfo"
+    "related_pages"
+    "navfooter";
   width: 1180px;
 }
 
@@ -443,10 +452,10 @@ article {
   grid-gap: 18px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 4fr 4fr;
-	grid-template-areas:
-		"moret moret moret"
-		"more1 more1 more1"
-		"more1 more1 more1";
+  grid-template-areas:
+    "moret moret moret"
+    "more1 more1 more1"
+    "more1 more1 more1";
   height: 510px;
   justify-content: space-around;
   margin: 0 auto 0 auto;
@@ -461,24 +470,20 @@ article {
   grid-gap: 18px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 4fr;
-	grid-template-areas:
-		"editort editort editort"
-		"ed1 ed1 ed1";
+  grid-template-areas:
+    "editort editort editort"
+    "ed1 ed1 ed1";
   height: 250px;
   justify-content: space-around;
   margin: -21% auto 0 auto;
   padding-top: 20px;
-	width: 852px;
+  width: 852px;
   grid-column: 1/3;
-}
-
-.moreinfo figure img {
-  width: 272px;
 }
 
 .editort {
   color: #333;
-  font-family: 'NYTFranklin Bold', sans-serif;
+  font-family: "NYTFranklin Bold", sans-serif;
   grid-area: editort;
   grid-column: 1/4;
   height: 15px;
@@ -495,7 +500,7 @@ article {
 
 .moret {
   color: black;
-  font-family: 'NYTFranklin Bold', sans-serif;
+  font-family: "NYTFranklin Bold", sans-serif;
   grid-column: 1/4;
   height: 15px;
   width: 700px;
@@ -508,7 +513,7 @@ article {
 
 .moretfigcap {
   color: rgb(153, 153, 153);
-  font-family: 'NYTCheltenham', sans-serif;
+  font-family: "NYTCheltenham", sans-serif;
   font-size: 0.625rem;
   line-height: 1.23em;
   margin: 3px 0 0 0;
@@ -525,7 +530,7 @@ article {
 .editor1 a {
   color: rgb(18, 18, 18);
   font-weight: 500;
-  font-family: 'NYTCheltenham', sans-serif;
+  font-family: "NYTCheltenham", sans-serif;
   font-size: 1.125rem;
   line-height: 1.375rem;
 }
@@ -539,7 +544,7 @@ article {
 .more1 span,
 .editor1 span {
   color: rgb(153, 153, 153);
-  font-family: 'NYTFranklin ExtraBold', sans-serif;
+  font-family: "NYTFranklin ExtraBold", sans-serif;
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.3px;
@@ -549,18 +554,12 @@ article {
 
 .articlebottom {
   grid-column: 2/3;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-areas:
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
     "top top top"
-		"readc readc social";
+    "readc readc social";
   height: 92px;
   width: 600px;
-}
-
-.more img,
-.editor img {
-  height: 181.75px;
-  width: 272.633px;
 }
 
 .mostpopular {
@@ -585,7 +584,7 @@ article {
   box-sizing: border-box;
   color: #fff;
   display: inline-block;
-  font-family: 'NYTFranklin', sans-serif;
+  font-family: "NYTFranklin", sans-serif;
   font-size: 11px;
   font-stretch: 100%;
   font-weight: 700;
@@ -616,10 +615,10 @@ article {
   align-items: baseline;
   border-top: 2px double gray;
   display: grid;
-	grid-area: related_pages;
-	grid-template-areas:
-		"head head head head head head"
-		"news opinion arts living relmore subs"
+  grid-area: related_pages;
+  grid-template-areas:
+    "head head head head head head"
+    "news opinion arts living relmore subs"
     "news opinion arts living relmore subs";
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 1fr 1fr 5fr;
@@ -633,25 +632,46 @@ article {
 }
 
 .relcont a {
-	display: inline-block;
+  display: inline-block;
   color: rgb(0, 0, 0);
-  font-family: 'NYTFranklin', sans-serif;
+  font-family: "NYTFranklin", sans-serif;
   font-size: 14px;
   font-weight: 500;
   height: 23px;
   line-height: 16px;
 }
 
+.mostpopular a {
+  box-sizing: border-box;
+  color: rgb(18, 18, 18);
+  font-family: "NYTCheltenham", sans-serif;
+  font-size: 1.1875rem;
+  height: 81px;
+  text-decoration: none;
+  border-top: 1px solid rgb(226, 226, 226);
+  font-weight: 500;
+  line-height: 1.4375rem;
+  margin: 0 0 0 0;
+  padding: 15px 0 15px 0;
+  text-decoration-color: rgb(18, 18, 18);
+  width: 315px;
+}
+
+.artbottomfooter a {
+  color: #333;
+  text-decoration: underline;
+}
+
 .related_pages ul li {
-	margin: 0 0 5px 8px;
+  margin: 0 0 5px 8px;
 }
 
 .related_pages a {
-	color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
 
 .related_pages ul li a {
-  font-family: 'NYTFranklin ExtraBold', sans-serif;
+  font-family: "NYTFranklin ExtraBold", sans-serif;
   font-size: 14px;
   font-weight: 500;
   height: 23px;
@@ -664,7 +684,7 @@ article {
 
 .artbottomfooter {
   color: #333;
-  font-family:'NYTFranklin', sans-serif;
+  font-family: "NYTFranklin", sans-serif;
   font-size: 0.75rem;
   font-weight: 100;
   grid-area: top;
@@ -674,30 +694,9 @@ article {
   max-width: 600px;
 }
 
-.artbottomfooter a {
-  color: #333;
-  text-decoration: underline;
-}
-
 .artbottomfooter a:hover {
   cursor: pointer;
   text-decoration: none;
-}
-
-.mostpopular a {
-  box-sizing: border-box;
-  color: rgb(18, 18, 18);
-  font-family: 'NYTCheltenham', sans-serif;
-  font-size: 1.1875rem;
-  height: 81px;
-  text-decoration: none;
-  border-top: 1px solid rgb(226, 226, 226);
-  font-weight: 500;
-  line-height: 1.4375rem;
-  margin: 0 0 0 0;
-  padding: 15px 0 15px 0;
-  text-decoration-color: rgb(18, 18, 18);
-  width: 315px;
 }
 
 .mostpopular a[href="https://www.nytimes.com/2020/02/27/travel/what-to-do-36-hours-in-queenstown.html?algo=top_conversion&fellback=false&imp_id=100751225&imp_id=302800941&action=click&module=trending&pgtype=Article&region=Footer"] {
@@ -714,7 +713,7 @@ article {
 .mostpopular div {
   border-top: 1px solid rgb(51, 51, 51);
   color: #333;
-  font-family: 'NYTFranklin Bold', sans-serif;
+  font-family: "NYTFranklin Bold", sans-serif;
   font-size: 16px;
   height: 39px;
   line-height: 22px;
@@ -759,10 +758,10 @@ article {
   display: grid;
   grid-area: subs;
   grid-gap: 5px;
-	grid-template-areas:
-		"sub1"
-		"sub2"
-		"lang";
+  grid-template-areas:
+    "sub1"
+    "sub2"
+    "lang";
   grid-template-rows: 2fr 1fr;
   width: 197px;
 }
@@ -789,7 +788,7 @@ article {
 #writer,
 #writer a {
   color: #333;
-  font-family: 'NYTFranklin Bold', sans-serif;
+  font-family: "NYTFranklin Bold", sans-serif;
   font-size: 15px;
 }
 
@@ -810,7 +809,7 @@ article {
 #titlesubsa {
   color: #000;
   display: inline-block;
-  font-family: 'NYTFranklin ExtraBold', sans-serif;
+  font-family: "NYTFranklin ExtraBold", sans-serif;
   font-size: 16px;
   font-weight: 700;
   height: 25px;
@@ -834,14 +833,14 @@ article {
 #gohome {
   color: #567b95;
   display: inherit;
-  font-family: 'NYTFranklin', sans-serif;
+  font-family: "NYTFranklin", sans-serif;
   font-size: 11px;
   justify-content: end;
   text-decoration: none;
 }
 
 .menu {
-  background: url('./img/menubtn.jpg');
+  background: url("./img/menubtn.jpg");
   background-position: center;
   background-repeat: no-repeat;
   grid-column: 2/5;
@@ -851,7 +850,7 @@ article {
 }
 
 .search {
-  background: url('./img/search.png');
+  background: url("./img/search.png");
   background-position: center;
   background-repeat: no-repeat;
   grid-column: 6/9;
@@ -891,7 +890,7 @@ button[class="menu"] {
 
 .reltitles {
   color: rgb(51, 51, 51);
-  font-family: 'NYTFranklin ExtraBold', sans-serif;
+  font-family: "NYTFranklin ExtraBold", sans-serif;
   font-size: 13px;
   font-weight: 700;
   line-height: 15px;
