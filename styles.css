@@ -1,3 +1,52 @@
+@font-face {
+  font-family: NYTFranklin Light;
+  font-weight: 300;
+  font-style: normal;
+  src: url("fonts/franklin-normal-300.ttf");
+}
+
+@font-face {
+  font-family: NYTFranklin;
+  font-weight: 500;
+  font-style: normal;
+  src: url("fonts/franklin-normal-600.ttf");
+}
+
+@font-face {
+  font-family: NYTFranklin Bold;
+  font-weight: 700;
+  font-style: normal;
+  src: url("fonts/franklin-normal-700.ttf");
+}
+
+@font-face {
+  font-family: NYTFranklin ExtraBold;
+  font-weight: 800;
+  font-style: normal;
+  src: url("fonts/franklin-normal-800.ttf");
+}
+
+@font-face {
+  font-family: NYTImperial;
+  font-weight: 500;
+  font-style: normal;
+  src: url("fonts/imperial-normal-500.ttf");
+}
+
+@font-face {
+  font-family: NYTCheltenham;
+  font-weight: 500;
+  font-style: normal;
+  src: url("fonts/cheltenham-normal-500.ttf");
+}
+
+@font-face {
+  font-family: nyt-cheltenham-sh-400-normal;
+  font-weight: 500;
+  font-style: normal;
+  src: url("fonts/nyt-cheltenham-sh-400-normal.woff");
+}
+
 a {
   text-decoration: none;
 }
@@ -12,11 +61,6 @@ footer {
 footer a {
   color: #666;
   font-size: 10.5px;
-}
-
-@font-face {
-  font-family: myFirstFont;
-  src: url(sansation_light.woff);
 }
 
 body {
