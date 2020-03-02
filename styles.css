@@ -481,7 +481,7 @@ article {
 
 .theory_cells {
   padding-top: 145px;
-  font-family: "NYTFranklin", sans-serif;
+  font-family: "NYTFranklin Light", sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 17px;
@@ -777,7 +777,7 @@ article {
 }
 
 .related_pages ul li a {
-  font-family: "NYTFranklin ExtraBold", sans-serif;
+  font-family: "NYTFranklin Light", sans-serif;
   font-size: 14px;
   font-weight: 500;
   height: 23px;
