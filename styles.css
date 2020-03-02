@@ -16,16 +16,17 @@ body {
 	width: 1920px;
 }
 
-nav {
+#mainnav {
 	align-items: center;
-	display: inline-grid;
+	display: grid;
 	font-family: 'NYTFranklin';
 	grid-gap: 5px;
 	grid-template-columns: repeat(100,1fr);
 	grid-template-rows: 1fr;
-	height: 42px;
-	padding-top: 0px;
-	width: 1920px;
+	max-height: 36px;
+	padding: 0 0 2px 0;
+	margin: 4px 0 0 -2px;
+	width: 1351px;
 }
 
 nav a {
@@ -63,7 +64,6 @@ a:hover{
 article {
 	grid-column: 2/3;
 	display: grid;
-	grid-template-columns: 1fr 2.5fr 1fr;
 	grid-gap: 15px;
 }
 
@@ -74,7 +74,7 @@ article {
 	font-size: 40px;
 	font-style: italic;
 	font-weight: 700;
-	font-family: "NYTCheltenhamCond Light";
+	font-family: "NYTCheltenham";
 	justify-self: start;
 	align-self: end;
 	padding-top: 40px;
@@ -82,12 +82,12 @@ article {
 }
 
 .main_text{
-	margin-left: 60px;
+	margin-left: 100px;
 }
 
 #main_picture {
 	grid-column: 1/4;
-	margin-left: 70px;
+	margin-left: 100px;
 	margin-right: 0;
 	max-width: 945px;
 	height:531px;
@@ -99,18 +99,28 @@ article {
 	font-size: 0.9375rem;
 	max-height: 37px;
 	line-height: 1.25rem;
-	margin: 10px 20px 0 50px;
+	margin: 10px 20px 50px 100px;
 	font-weight: 400;
 	font-family: NYTImperial;
 	color: rgb(102, 102, 102);
 	max-width: 702px;
 }
 
-#writer {	
+#writer,#writer a {	
+	color: #333;
 	font-family: 'NYTFranklin Bold';
 	font-size: 15px;
+}
+
+#writer a{
+	text-decoration: underline;
+}
+
+#writer a:hover{
 	text-decoration: none;
 }
+
+
 #main_pf_span {
 	color: #888;
 	letter-spacing: 0.01em;
@@ -127,7 +137,13 @@ article {
 }
 
 #header_date_text01 {
+	color: rgb(0, 0, 0);
+	font-family:'NYTFranklin';
+	font-size: 0.8125rem;
+	font-weight: 400;
 	float: left;
+	line-height: 1rem;
+	margin: 0;
 }
 
 #header_icons_text01 {
@@ -191,13 +207,81 @@ article {
 }
 
 .editor_titles {
+	color: rgb(51, 51, 51);
+	font-family: "NYTCheltenham";
+	font-size: 14px;
+	font-weight: 500;
 	float: right;
 	width: 110px;
 	margin-left: 10px ;
-	font-size: 14px;
-	font-family: "NYTCheltenhamCond Light";
 }
 
+.editortopgrid{
+	display: grid;
+	grid-columns: 3fr 5fr;
+	grid-rows: 27px repeat(3, 77.5px);
+	grid-template-areas: 
+		"top top"
+		"edt1 edt1"
+		"edt2 edt2"
+		"edt3 edt3";
+}
+
+.editortopgridt {
+	border-bottom: 1px solid rgb(226, 226, 226);
+	color: rgb(0, 0, 0);
+	font-family:'NYTFranklin Bold';
+	font-size: 14px;
+	grid-area: top;
+	letter-spacing: 0.02em;
+	line-height: 14px;
+	margin: 0 0 15px 0;
+	max-width: 200px;
+	padding-bottom: 12px;
+}
+
+.editor_cell01{
+	grid-area: edt1;
+}
+
+.editor_cell02{
+	display: grid;
+	grid-area: edt2;
+	grid-auto-flow: row;
+}
+
+.editor_cell03{
+	display: grid;
+	grid-area: edt3;
+	grid-auto-flow: row;
+}
+
+.cell{
+	align-items: center;
+	display: grid;
+	grid-template-columns: 3fr 5fr;
+	grid-template-areas:
+	  "a b";
+}
+
+.editor_cell01 .cell01 a img {
+	border: 1px solid green;
+	grid-area: a
+}
+
+.cell a {
+	height: 70px;
+	text-decoration: none;
+}
+
+.cell p:hover{
+	text-decoration: underline;
+}
+
+.cell p{
+	font-family: 'nyt-cheltenham-sh-400-normal';
+	grid-area: b;
+}
 .theoryofinflation {
 	grid-column: 1/4;
 	width: 945px;
@@ -217,6 +301,7 @@ article {
 				 "column1 cells cells  cells  cells column2"
 				 "column1 cells cells  cells  cells column2"
 				 "column1 footer footer footer footer column2";
+	margin-left: 100px;
 	width: 945px;
 }
 
@@ -703,7 +788,7 @@ header {
 }*/
 
 .menu {
-	background: url('./img/menubtn.png');
+	background: url('./img/menubtn.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	grid-column: 2/5;
@@ -723,10 +808,10 @@ header {
 }
 
 .spaceandcosmos {
-	box-sizing: content-box;
-	height: 15px;
+	height: 14px;
 	vertical-align: middle;
-	padding-bottom: 8px;
+	padding: 0;
+	margin: 0 0 5px -20px;
 	width: 128px;
 }
 
@@ -735,10 +820,14 @@ header {
 	grid-column: 5/8;
 }
 
+button[class="menu"]{
+	background-color: green;
+}
+
 .bluebutton {
 	align-self: center;
 	background-color: rgb(86, 123, 149);;
-	border: 1px solid rgb(51, 51, 51);
+	border: 1px solid #326891;;
 	border-radius: 3px;
 	box-sizing: border-box;
 	color: #fff;
@@ -761,7 +850,7 @@ header {
 
 #subscribe {
 	grid-column: 94/95;
-	margin-left: -109px;
+	margin: 0 4px 0 -109px;
 	width: 119px;
 }
 

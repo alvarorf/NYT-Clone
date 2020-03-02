@@ -10,8 +10,9 @@
 
 <body>
 
-  <nav>
+  <nav id="mainnav">
     <button class="menu">
+      
     </button>
     <button class="search">
     </button>
@@ -44,7 +45,7 @@
       </figure>
 
       <header id="header_text01">
-        <p id="writer"><a href="http://www.nytimes.com/by/dennis-overbye">By Dennis Overbye</a></p>
+        <p id="writer">By <a href="http://www.nytimes.com/by/dennis-overbye"><span>Dennis Overbye</span></a></p>
         <br>
         <p id="header_date_text01">March 17, 2014</p>
         <div id="header_icons_text01"> <img src="#" alt=""> <img src="#" alt=""> <img src="#" alt=""></div>
@@ -141,38 +142,28 @@
       </div>
 
       <aside class="editor_top">
-        <div>
-          <p>Editor's Picks</p>
-
+        <div class="editortopgrid">
+          <div class="editortopgridt">
+            Editor's Picks
+          </div>
           <hr>
-
-          <a class="editor_cell01"
-            href="https://www.nytimes.com/interactive/2020/02/28/sports/womens-olympic-marathon-trials.html?algo=bandit-story-geo&fellback=false&imp_id=33430537&imp_id=858996927&action=click&module=editorContent&pgtype=Article&region=CompanionColumn&contentCollection=Trending">
-            <img id="editor_img_01" src="./img/editor_top01.webp" alt="A women running">
-          </a>
-          <a href="">
-            <p class="editor_titles">Why Are American Women Running Faster Than Ever? We Asked Them — Hundreds of Them
-            </p>
-          </a>
-          <br><br>
-
-          <a class="editor_cell02"
-            href="https://www.nytimes.com/2020/02/21/realestate/how-to-be-an-expatriate-in-2020.html?algo=bandit-story-geo&fellback=false&imp_id=711204996&imp_id=957164410&action=click&module=editorContent&pgtype=Article&region=CompanionColumn&contentCollection=Trending">
-            <img id="editor_img_02" src="./img/editor_top02.webp" alt="A couple smiling">
-          </a>
-          <a href="">
-            <p class="editor_titles">How to Be an Expatriate in 2020</p>
-          </a>
-          <br><br>
-
-          <a class="editor_cell03"
-            href="https://www.nytimes.com/2020/02/23/obituaries/b-smith-dead.html?algo=bandit-story-geo&fellback=false&imp_id=32519592&imp_id=643680823&action=click&module=editorContent&pgtype=Article&region=CompanionColumn&contentCollection=Trending">
-            <img id="editor_img_03" src="./img/editor_top03.webp" alt="B. Smith smiling while sitting">
-          </a>
-          <a href="">
-            <p class="editor_titles">B. Smith, Model Turned Restaurateur and Lifestyle Guru, Dies at 70</p>
-          </a>
-
+          <div class="editor_cell01">
+            <a class="cell" href="https://www.nytimes.com/interactive/2020/02/28/sports/womens-olympic-marathon-trials.html?algo=bandit-story-geo&fellback=false&imp_id=33430537&imp_id=858996927&action=click&module=editorContent&pgtype=Article&region=CompanionColumn&contentCollection=Trending">
+              <img id="editor_img_01" src="./img/editor_top01.webp" alt="A women running">
+              <p class="editor_titles">Why Are American Women Running Faster Than Ever? We Asked Them — Hundreds of Them</p> </a>
+          </div>
+          <div class="editor_cell02" >
+            <a class="cell" href="https://www.nytimes.com/2020/02/21/realestate/how-to-be-an-expatriate-in-2020.html?algo=bandit-story-geo&fellback=false&imp_id=711204996&imp_id=957164410&action=click&module=editorContent&pgtype=Article&region=CompanionColumn&contentCollection=Trending">
+              <img id="editor_img_02" src="./img/editor_top02.webp" alt="A couple smiling">
+              <p class="editor_titles">How to Be an Expatriate in 2020</p>
+            </a>
+          </div>
+          <div class="editor_cell03">
+            <a class="cell" href="https://www.nytimes.com/2020/02/23/obituaries/b-smith-dead.html?algo=bandit-story-geo&fellback=false&imp_id=32519592&imp_id=643680823&action=click&module=editorContent&pgtype=Article&region=CompanionColumn&contentCollection=Trending">
+              <img id="editor_img_03" src="./img/editor_top03.webp" alt="B. Smith smiling while sitting">
+              <p class="editor_titles">B. Smith, Model Turned Restaurateur and Lifestyle Guru, Dies at 70</p>
+            </a>
+          </div>
         </div>
       </aside>
 
