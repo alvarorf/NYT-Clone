@@ -1,0 +1,1028 @@
+@font-face {
+  font-family: NYTFranklin Light;
+  font-weight: 300;
+  font-style: normal;
+  src: url("fonts/franklin-normal-300.ttf");
+}
+
+@font-face {
+  font-family: NYTFranklin;
+  font-weight: 500;
+  font-style: normal;
+  src: url("fonts/franklin-normal-600.ttf");
+}
+
+@font-face {
+  font-family: NYTFranklin Bold;
+  font-weight: 700;
+  font-style: normal;
+  src: url("fonts/franklin-normal-700.ttf");
+}
+
+@font-face {
+  font-family: NYTFranklin ExtraBold;
+  font-weight: 800;
+  font-style: normal;
+  src: url("fonts/franklin-normal-800.ttf");
+}
+
+@font-face {
+  font-family: NYTImperial;
+  font-weight: 500;
+  font-style: normal;
+  src: url("fonts/imperial-normal-500.ttf");
+}
+
+@font-face {
+  font-family: NYTCheltenham;
+  font-weight: 500;
+  font-style: normal;
+  src: url("fonts/cheltenham-normal-500.ttf");
+}
+
+@font-face {
+  font-family: nyt-cheltenham-sh-400-normal;
+  font-weight: 500;
+  font-style: normal;
+  src: url("fonts/nyt-cheltenham-sh-400-normal.woff");
+}
+
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  text-decoration: none;
+  justify-content: space-around;
+  width: 1050px;
+}
+
+footer a {
+  color: #666;
+  font-size: 10.5px;
+}
+
+body {
+  color: #333;
+  width: auto;
+}
+
+#mainnav {
+  align-items: center;
+  display: grid;
+  font-family: "NYTFranklin", sans-serif;
+  grid-gap: 5px;
+  grid-template-columns: repeat(100, 1fr);
+  grid-template-rows: 1fr;
+  max-height: 36px;
+  padding: 0 0 2px 0;
+  margin: 4px auto 0 auto;
+  width: 1351px;
+}
+
+nav a {
+  text-decoration: none;
+  grid-column: 11/16;
+}
+
+nav img {
+  align-self: center;
+  grid-column: 43/94;
+}
+
+nav > * {
+  border: 0;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+/* ARTICLE */
+
+.container {
+  height: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1180px 1fr;
+  grid-gap: 10px;
+}
+
+article {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: 1fr 2.5fr 1fr;
+  grid-gap: 15px;
+}
+
+.article_picture {
+  grid-column: 1/4;
+  padding-bottom: 30px;
+}
+
+#title {
+  align-self: end;
+  color: rgb(18, 18, 18);
+  grid-column: 2/3;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 700;
+  padding: 40px 0 10px 0;
+}
+
+#main_picture {
+  grid-column: 2/3;
+  width: 1024px;
+  padding-left: 150px;
+  margin: auto;
+}
+
+#main_pic_footer {
+  display: grid;
+  grid-column: 2/3;
+  font-size: 0.9375rem;
+  max-height: 37px;
+  line-height: 1.25rem;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-family: "NYTImperial", sans-serif;
+  color: rgb(102, 102, 102);
+  max-width: 702px;
+  padding-left: 150px;
+}
+
+#main_pf_span {
+  color: #888;
+  letter-spacing: 0.01em;
+  font-family: "NYTImperial", sans-serif;
+  font-size: 14px;
+  margin-left: 0;
+  text-align: left;
+  width: 712px;
+}
+
+#header_text01 {
+  grid-column: 2/3;
+  margin: auto;
+  width: 600px;
+}
+
+#header_date_text01 {
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  font-family: "NYTFranklin Light", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1rem;
+  margin: 0;
+}
+
+#header_icons_text01 {
+  float: right;
+  display: grid;
+  grid-template-columns: 25px 25px 30px;
+  grid-template-rows: 30px;
+  justify-content: center;
+  grid-gap: 10px;
+}
+
+.editor_top img {
+  height: 75px;
+  width: 75px;
+}
+
+.second_picture img {
+  grid-area: img2;
+  max-width: 720px;
+}
+
+.more img,
+.editor img {
+  height: 181.75px;
+  width: 272.633px;
+}
+
+.moreinfo figure img {
+  width: 272px;
+}
+
+.editor_cell01 .cell01 a img {
+  grid-area: a;
+}
+
+#share_top,
+#share_bottom {
+  border: 1px solid #eee;
+  background-color: #eee;
+  border-radius: 12.5px;
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  float: right;
+}
+
+#share_top:hover,
+#share_bottom:hover {
+  background-color: white;
+  cursor: pointer;
+  border-color: lightgray;
+}
+
+#share_top img,
+#share_bottom img {
+  height: 13px;
+  width: 13px;
+}
+
+#bookmark_button {
+  background-color: white;
+  border: none;
+  width: 25px;
+  height: 25px;
+  padding: 0;
+}
+
+#bookmark_button:hover {
+  cursor: pointer;
+}
+
+#comment_top {
+  border: none;
+  display: flex;
+  height: 30px;
+  padding: 0;
+  background-image: url("./img/chat.png");
+  background-size: 30px 30px;
+  background-color: white;
+  justify-content: center;
+  font-size: 11px;
+}
+
+#comment_top:hover {
+  cursor: pointer;
+}
+
+.text_01 {
+  grid-column: 2/3;
+  font-family: "NYTImperial", sans-serif;
+  font-size: 21.5px;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.875rem;
+  margin: auto;
+  margin-bottom: 0.9375rem;
+  width: 600px;
+}
+
+.text_01 p {
+  margin-bottom: 15px;
+}
+
+.text_01 hr {
+  width: 72px;
+  border: 1px solid rgb(204, 204, 204);
+}
+
+.second_title {
+  grid-column: 2/3;
+  line-height: 30px;
+  font-family: "NYTImperial", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: rgb(51, 51, 51);
+}
+
+.ad_01 {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.75rem;
+  font-family: "NYTFranklin Bold", sans-serif;
+  color: #333;
+}
+
+.text_01_link {
+  color: rgb(50, 104, 145);
+  text-decoration: underline;
+}
+
+.text_01_link:hover {
+  text-decoration: none;
+}
+
+#link_ad_01 {
+  text-decoration: none;
+  color: rgb(50, 104, 145);
+}
+
+.editor_top {
+  grid-column: 3/4;
+  grid-row: 3/9;
+  margin: auto;
+  margin-left: 0;
+}
+
+.editor_titles {
+  color: rgb(51, 51, 51);
+  font-family: "NYTCheltenham", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  float: right;
+  width: 110px;
+  margin-left: 10px;
+}
+
+.editortopgrid {
+  display: grid;
+  grid-template-areas:
+    "top top"
+    "edt1 edt1"
+    "edt2 edt2"
+    "edt3 edt3";
+}
+
+.editortopgridt {
+  border-bottom: 1px solid rgb(226, 226, 226);
+  color: rgb(0, 0, 0);
+  font-family: "NYTFranklin Bold", sans-serif;
+  font-size: 14px;
+  grid-area: top;
+  letter-spacing: 0.02em;
+  line-height: 14px;
+  margin: 0 0 15px 0;
+  max-width: 200px;
+  padding-bottom: 12px;
+}
+
+.editor_cell01 {
+  grid-area: edt1;
+}
+
+.editor_cell02 {
+  display: grid;
+  grid-area: edt2;
+  grid-auto-flow: row;
+}
+
+.editor_cell03 {
+  display: grid;
+  grid-area: edt3;
+  grid-auto-flow: row;
+}
+
+.cell {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+  grid-template-areas: "a b";
+}
+
+.second_picture {
+  grid-column: 1/4;
+  display: grid;
+  grid-template-columns: auto 720px auto;
+  grid-template-areas:
+    "column1 img2 column2"
+    "column1 footer2 column2";
+  margin-bottom: 20px;
+}
+
+.second_picture p {
+  grid-area: footer2;
+  font-family: "NYTImperial", sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  color: rgb(102, 102, 102);
+  margin-right: 10px;
+  vertical-align: baseline;
+}
+
+.cell a {
+  height: 70px;
+  text-decoration: none;
+}
+
+.cell p {
+  font-family: "nyt-cheltenham-sh-400-normal", sans-serif;
+  grid-area: b;
+}
+
+.cell p:hover {
+  text-decoration: underline;
+}
+
+.theoryofinflation {
+  grid-column: 1/4;
+  width: 945px;
+}
+
+#theory_picture {
+  width: 945px;
+  height: 576px;
+}
+
+.theory_box {
+  grid-column: 1/4;
+  display: grid;
+  grid-template-columns: 0 repeat(4, 1fr) 0;
+  grid-template-areas:
+    "column1 title title title title column2"
+    "column1 title2 title2 title2 title2 column2"
+    "column1 cells cells cells cells column2"
+    "column1 cells cells cells cells column2"
+    "column1 footer footer footer footer column2";
+  margin-left: 120px;
+  width: 945px;
+}
+
+.theory_grid {
+  grid-area: cells;
+  display: grid;
+  height: 576px;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  background-repeat: no-repeat;
+  background-image: url("https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png");
+  background-size: 945px 576px;
+  font-family: "NYTFranklin Light", sans-serif;
+  width: 945px;
+}
+
+.theory_cells strong {
+  color: #000;
+  font-family: "NYTFranklin Bold", sans-serif;
+  font-weight: bold;
+  margin-right: 7px;
+}
+
+#title_theory {
+  grid-area: title;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 2px;
+  color: rgb(0, 0, 0);
+  padding: 0;
+}
+
+#theory_second_t {
+  grid-area: title2;
+  font-family: "nyt-cheltenham-sh-400-normal", sans-serif;
+  font-size: 0.875rem;
+  height: 36px;
+  line-height: 1.125rem;
+  color: rgb(102, 102, 102);
+  margin-right: 7px;
+  padding: 0;
+  width: 904px;
+}
+
+.theory_cells {
+  padding-top: 145px;
+  font-family: "NYTFranklin Light", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+  color: rgb(0, 0, 0);
+}
+
+#cofee {
+  padding-top: 0;
+}
+
+#grid_footer {
+  color: #333;
+  padding: 0;
+  font-family: "NYTCheltenham", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  height: 18px;
+  margin: 0 0 14px 0;
+  width: 945px;
+}
+
+#gridfooterdiv {
+  grid-area: footer;
+  height: 37.6px;
+  margin-top: 24px;
+  width: 945px;
+}
+
+.video_text {
+  grid-column: 2/3;
+  width: 600px;
+}
+
+/* ARTICLE */
+
+.moreinfo {
+  display: grid;
+  grid-area: moreinfo;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "more more more mostpopular"
+    "more more more mostpopular"
+    "editor editor editor mostpopular";
+  max-width: 1200px;
+  height: 1200px;
+}
+
+.moreinfo h2 {
+  display: none;
+}
+
+.unlock {
+  border-bottom: 1px solid rgb(204, 204, 204);
+  margin: 15px 0 10px 262px;
+  width: 72px;
+}
+
+.bottom {
+  display: grid;
+  grid-column: 1/4;
+  grid-template-areas:
+    "moreinfo"
+    "related_pages"
+    "navfooter";
+  width: 1180px;
+}
+
+.more {
+  border-top: 1px solid rgb(51, 51, 51);
+  display: grid;
+  grid-auto-flow: row;
+  grid-area: more;
+  grid-gap: 18px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 4fr 4fr;
+  grid-template-areas:
+    "moret moret moret"
+    "more1 more1 more1"
+    "more1 more1 more1";
+  height: 510px;
+  justify-content: space-around;
+  margin: 0 auto 0 auto;
+  padding-top: 20px;
+}
+
+.editor {
+  border-top: 1px solid rgb(51, 51, 51);
+  display: grid;
+  grid-auto-flow: row;
+  grid-area: editor;
+  grid-gap: 18px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 4fr;
+  grid-template-areas:
+    "editort editort editort"
+    "ed1 ed1 ed1";
+  height: 250px;
+  justify-content: space-around;
+  margin: -21% auto 0 auto;
+  padding-top: 20px;
+  width: 852px;
+  grid-column: 1/3;
+}
+
+.editort {
+  color: #333;
+  font-family: "NYTFranklin Bold", sans-serif;
+  grid-area: editort;
+  grid-column: 1/4;
+  height: 15px;
+  width: 700px;
+}
+
+.editort:hover {
+  text-decoration: underline;
+}
+
+.ed1 {
+  grid-area: ed1;
+}
+
+.moret {
+  color: black;
+  font-family: "NYTFranklin Bold", sans-serif;
+  grid-column: 1/4;
+  height: 15px;
+  width: 700px;
+}
+
+.moret:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.moretfigcap {
+  color: rgb(153, 153, 153);
+  font-family: "NYTCheltenham", sans-serif;
+  font-size: 0.625rem;
+  line-height: 1.23em;
+  margin: 3px 0 0 0;
+  text-align: end;
+}
+
+.morettext {
+  padding-top: 5px;
+  font-size: 1.125rem;
+  line-height: 22px;
+}
+
+.more1 a,
+.editor1 a {
+  color: rgb(18, 18, 18);
+  font-weight: 500;
+  font-family: "NYTCheltenham", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+}
+
+.more1 p:hover,
+.editor1 p:hover {
+  cursor: pointer;
+  color: rgb(102, 102, 102);
+}
+
+.more1 span,
+.editor1 span {
+  color: rgb(153, 153, 153);
+  font-family: "NYTFranklin Light", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  margin: 0;
+  text-align: left;
+}
+
+.articlebottom {
+  grid-column: 2/3;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "top top top"
+    "readc readc social";
+  height: 92px;
+  width: 600px;
+}
+
+.mostpopular {
+  box-sizing: border-box;
+  color: rgb(102, 102, 102);
+  display: grid;
+  font-size: 1.1875rem;
+  grid-area: mostpopular;
+  grid-gap: 10px;
+  grid-template-columns: 1fr;
+  height: 39px;
+  margin: 0 0 10px 10px;
+  padding-left: 17px;
+  width: 315px;
+}
+
+.bluebutton {
+  align-self: center;
+  background-color: rgb(86, 123, 149);
+  border: 1px solid #326891;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #fff;
+  display: inline-block;
+  font-family: "NYTFranklin", sans-serif;
+  font-size: 11px;
+  font-stretch: 100%;
+  font-weight: 700;
+  height: 32px;
+  letter-spacing: 0.06em;
+  line-height: 11px;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.bluebutton:hover {
+  background-color: rgb(50, 104, 145);
+  cursor: pointer;
+}
+
+.socialb .bluebutton {
+  box-sizing: border-box;
+  font-size: 0.8125rem;
+  float: left;
+  width: 330px;
+}
+
+.socialicons {
+  float: right;
+}
+
+.related_pages {
+  align-items: baseline;
+  border-top: 2px double gray;
+  display: grid;
+  grid-area: related_pages;
+  grid-template-areas:
+    "head head head head head head"
+    "news opinion arts living relmore subs"
+    "news opinion arts living relmore subs";
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr 1fr 5fr;
+  margin: -100px auto 0 0;
+  padding: 0;
+  width: auto;
+}
+
+.relcont {
+  font-size: 14px;
+}
+
+.relcont a {
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  font-family: "NYTFranklin", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 23px;
+  line-height: 16px;
+}
+
+.mostpopular a {
+  box-sizing: border-box;
+  color: rgb(18, 18, 18);
+  font-family: "NYTCheltenham", sans-serif;
+  font-size: 1.1875rem;
+  height: 81px;
+  text-decoration: none;
+  border-top: 1px solid rgb(226, 226, 226);
+  font-weight: 500;
+  line-height: 1.4375rem;
+  margin: 0 0 0 0;
+  padding: 15px 0 15px 0;
+  text-decoration-color: rgb(18, 18, 18);
+  width: 315px;
+}
+
+.artbottomfooter a {
+  color: #333;
+  text-decoration: underline;
+}
+
+.related_pages ul li {
+  margin: 0 0 5px 8px;
+}
+
+.related_pages a {
+  color: rgb(0, 0, 0);
+}
+
+.related_pages ul li a {
+  font-family: "NYTFranklin Light", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 23px;
+  line-height: 16px;
+}
+
+.related_pages a:hover {
+  text-decoration: underline;
+}
+
+.artbottomfooter {
+  color: #333;
+  font-family: "NYTFranklin", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 100;
+  grid-area: top;
+  height: 32px;
+  line-height: 1rem;
+  margin: 0 auto 1em auto;
+  max-width: 600px;
+}
+
+.artbottomfooter a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.mostpopular a[href="https://www.nytimes.com/2020/02/27/travel/what-to-do-36-hours-in-queenstown.html?algo=top_conversion&fellback=false&imp_id=100751225&imp_id=302800941&action=click&module=trending&pgtype=Article&region=Footer"] {
+  border-top: 1px solid rgb(226, 226, 226);
+  margin-bottom: -25px;
+}
+
+.mostpopular a:hover {
+  color: rgb(102, 102, 102);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.mostpopular div {
+  border-top: 1px solid rgb(51, 51, 51);
+  color: #333;
+  font-family: "NYTFranklin Bold", sans-serif;
+  font-size: 16px;
+  height: 39px;
+  line-height: 22px;
+  margin-bottom: -10px;
+  padding-top: 17px;
+  width: 315px;
+}
+
+.mostpopular:first-child {
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+.relhead {
+  display: flex;
+  grid-area: head;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.news {
+  grid-area: news;
+}
+
+.opinion {
+  grid-area: opinion;
+}
+
+.arts {
+  grid-area: arts;
+}
+
+.living {
+  grid-area: living;
+}
+
+.relmore {
+  grid-area: relmore;
+}
+
+.relpagsubs {
+  border-left: 1px solid rgb(226, 226, 226);
+  display: grid;
+  grid-area: subs;
+  grid-gap: 5px;
+  grid-template-areas:
+    "sub1"
+    "sub2"
+    "lang";
+  grid-template-rows: 2fr 1fr;
+  width: 197px;
+}
+
+.subs1 {
+  grid-area: sub1;
+}
+
+.subs1 ul li {
+  height: 25px;
+  font-weight: 700;
+}
+
+.subs2 {
+  grid-area: sub2;
+  margin: -5px 0 0 8px;
+}
+
+.subs2 ul li,
+.lang ul li {
+  height: 23px;
+}
+
+#writer,
+#writer a {
+  color: #333;
+  font-family: "NYTFranklin Bold", sans-serif;
+  font-size: 15px;
+}
+
+#writer a {
+  text-decoration: underline;
+}
+
+#writer a:hover {
+  text-decoration: none;
+}
+
+.lang {
+  margin-left: 5px;
+  padding-top: 10px;
+  border-top: 1px solid rgb(226, 226, 226);
+  grid-area: lang;
+}
+
+#titlesubsa,
+#titlesubsb,
+#titlesubsc,
+#titlesubsd {
+  color: #000;
+  display: inline-block;
+  font-family: "NYTFranklin ExtraBold", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  height: 25px;
+  line-height: 15px;
+  margin-bottom: 5px;
+  padding: 0 0 5px;
+  width: auto;
+}
+
+.subsicon {
+  vertical-align: middle;
+  height: 18px;
+  width: 20px;
+}
+
+#nytlogorel {
+  display: inherit;
+  justify-content: start;
+}
+
+#gohome {
+  color: #567b95;
+  display: inherit;
+  font-family: "NYTFranklin", sans-serif;
+  font-size: 11px;
+  justify-content: end;
+  text-decoration: none;
+}
+
+.menu {
+  background: url("./img/menubtn.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-column: 2/5;
+  height: 25px;
+  padding-bottom: 7px;
+  width: 35px;
+}
+
+.search {
+  background: url("./img/search.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-column: 6/9;
+  height: 23px;
+  padding-bottom: 7px;
+  width: 28px;
+}
+
+.spaceandcosmos {
+  height: 14px;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0 0 5px -20px;
+  width: 128px;
+}
+
+#linkspaandcos {
+  display: inline-grid;
+  grid-column: 5/8;
+}
+
+button[class="menu"] {
+  background-color: white;
+}
+
+#subscribe {
+  grid-column: 94/95;
+  margin: 0 4px 0 -109px;
+  width: 119px;
+}
+
+#log-in {
+  grid-column: 95/97;
+  margin-left: -1px;
+  width: 63px;
+}
+
+.reltitles {
+  color: rgb(51, 51, 51);
+  font-family: "NYTFranklin ExtraBold", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 15px;
+  width: auto;
+}
+
+.navfooter {
+  border-top: 1px solid #ebebeb;
+  display: flex;
+  grid-column: 2/3;
+  height: 40px;
+  justify-content: space-around;
+  padding-top: 10px;
+  width: 1150px;
+}
