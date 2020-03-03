@@ -48,8 +48,8 @@
 }
 
 html {
-  overflow-x: scroll;
   width: 100%;
+  overflow-x: hidden;
 }
 
 * {
@@ -114,7 +114,7 @@ a:hover {
   height: auto;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1024px 1fr;
+  grid-template-columns: 1fr 1180px 1fr;
   grid-gap: 10px;
 }
 
@@ -143,8 +143,8 @@ article {
 #main_picture {
   grid-column: 2/3;
   width: 1024px;
-  padding: 0;
-  margin: 0;
+  padding-left: 150px;
+  margin: auto;
 }
 
 #main_pic_footer {
@@ -159,6 +159,7 @@ article {
   font-family: "NYTImperial", sans-serif;
   color: rgb(102, 102, 102);
   max-width: 702px;
+  padding-left: 150px;
 }
 
 #main_pf_span {
@@ -442,7 +443,7 @@ article {
     "column1 cells cells cells cells column2"
     "column1 cells cells cells cells column2"
     "column1 footer footer footer footer column2";
-  margin-left: 50px;
+  margin-left: 120px;
   width: 945px;
 }
 
